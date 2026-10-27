@@ -1,0 +1,1064 @@
+{
+  "version": "2.0.2",
+  "validation_date": "2026-10-27",
+  "status": "release_checks_passed",
+  "source_base": "daa8f93754d45cb1032d87f2be174eeb5f490688",
+  "production_source_fingerprint": {
+    "version": "2.0.2",
+    "algorithm": "sha256",
+    "format": "sorted relative path, NUL, file sha256, LF",
+    "sha256": "cf692d0c7880ce8c03942afcb0e2ec7dae2fd3447bbd71b20e0f70d594b39d90",
+    "files": [
+      {
+        "path": "cmd/aijiasu-native/client_commands.go",
+        "sha256": "b0772bcf44a1b90cba795ea954f4a32076cec6a5443d7de90b6caf76bbd37f4d"
+      },
+      {
+        "path": "cmd/aijiasu-native/init.go",
+        "sha256": "7a2ccae45d0c5a2b0a8a4090a60654bbf27a2fc536e4e071be01e4c5e7ba6d53"
+      },
+      {
+        "path": "cmd/aijiasu-native/login_errors.go",
+        "sha256": "ae56a9779e12331a6ffb20a10eb4f79d4c816cdfcad255955a9dbe274598468b"
+      },
+      {
+        "path": "cmd/aijiasu-native/main.go",
+        "sha256": "c85eddb3034b04dc7163f124c795aa6ceac4327f1901c016adbc3c16985886fe"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_management.go",
+        "sha256": "8046623f23980dc56eea3898819e816049931eb7cba0ac3ee59af82806a6bada"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal.go",
+        "sha256": "56748096cf5f7d65a01e1fa2872c8848b2c30bf9afe393d0d65b03c7752591c9"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_console.go",
+        "sha256": "22274a418df9fd9de35ec417a3b77e8b3ac332eeeaed5cc12c7fabc14591ddf1"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_darwin.go",
+        "sha256": "6b77631f007373324deaf6a0454af8b5d99a3a38c407eea22056dcb8a1f19b5a"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_linux.go",
+        "sha256": "c2e856168d1c1dbe9e5ff01b0c773349e9dacdb9a34dfe000987aab3416626a1"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_other.go",
+        "sha256": "1e603fec60dc533f8c88639bd8d13b4a7fcc60b68a7fc94b5d7d2de009c6e7f1"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_unix.go",
+        "sha256": "507abc9a3a9d1b1e1cc88032e3b89f99604152a37a2539f252bb55ff3026df08"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_windows.go",
+        "sha256": "081610dd813902269180809c8691fe24297104abd7d8e1ac55c88827b045af3e"
+      },
+      {
+        "path": "cmd/aijiasu-native/tls_config.go",
+        "sha256": "a264dd1ac0a4b1be896a1c07f1b33f76de7e32d49a03e83861bf930f54ac3b01"
+      },
+      {
+        "path": "go.mod",
+        "sha256": "9ef31bbc864f21e6cccb7235bea6c06fabb183284a296e9fcb18076e99d95efe"
+      },
+      {
+        "path": "go.sum",
+        "sha256": "cde7b21c6627bd3cfc042453150e8eaf8b6c80aa2df25d96f48b038050945f03"
+      },
+      {
+        "path": "internal/native/authstore/session_lifecycle.go",
+        "sha256": "5ecbfb5f7230b592a130d4deebc337d60fef2f21769736ddeadb2aa7071f0e90"
+      },
+      {
+        "path": "internal/native/authstore/session_lock_other.go",
+        "sha256": "cbf6e597cbbca42b96924d01b02933cda73b2e7668a8c7b9a5fe123e19a06778"
+      },
+      {
+        "path": "internal/native/authstore/session_lock_unix.go",
+        "sha256": "857887414d151595aeace578474fe7b323dcb82550e6bb7e39b491092bbfb289"
+      },
+      {
+        "path": "internal/native/authstore/session_lock_windows.go",
+        "sha256": "6a92114d9683e69e2e1a0be89e4968f4724dc0878ec5c4dfbd72cdc946e1384b"
+      },
+      {
+        "path": "internal/native/authstore/session_update.go",
+        "sha256": "1bd5f042417e667a7fdb6dc71ca832645528477e1425d7c4040af9cb9265bdb3"
+      },
+      {
+        "path": "internal/native/authstore/store.go",
+        "sha256": "2655bea0bd56c3a8d17f6c219d73ce0518b4b073abb150920e3a50f2789c6fc7"
+      },
+      {
+        "path": "internal/native/authstore/transport.go",
+        "sha256": "43575f0a2b39166c83ba05eb1d677a633a168604597de3a7d3fbf14a26d03fae"
+      },
+      {
+        "path": "internal/native/bootstrap/bootstrap.go",
+        "sha256": "8e566e977f638502756ac6701ef5d3d124192b83197921460a4419be121f3ab2"
+      },
+      {
+        "path": "internal/native/clientapi/client.go",
+        "sha256": "123b96db729333ddf95b9d5b4364d5a7f5dc8cfc82f66b8c56811185b3f0ce3a"
+      },
+      {
+        "path": "internal/native/clientapi/clock_other.go",
+        "sha256": "25ab73f850c7f12b192328ad089705e0eef69a3dd383d3a032af0998c32a5387"
+      },
+      {
+        "path": "internal/native/clientapi/clock_unix.go",
+        "sha256": "86323ed6a2f0f02dd08ed71f83e87734ef613217d8bd71880069206054c71541"
+      },
+      {
+        "path": "internal/native/clientapi/clock_windows.go",
+        "sha256": "14f8d7f67aa3bb8f46a33d7abcb56ac473f03810832ac64c9be2302f1dfc1b82"
+      },
+      {
+        "path": "internal/native/clientapi/encoding.go",
+        "sha256": "84a15a64987bffdb1d31353ba04a3b6ee950010d3e0e7a36c4077d24fd689811"
+      },
+      {
+        "path": "internal/native/clientapi/errors.go",
+        "sha256": "19fbc41214dfa97391678d36f71bfc2de188f6369915fd4bc62c2be1f649cf91"
+      },
+      {
+        "path": "internal/native/clientapi/errors_unix.go",
+        "sha256": "00d97c292979f92ba2e50bd4063dec32f33c371b96787c5f625fdc4604c69ac4"
+      },
+      {
+        "path": "internal/native/clientapi/errors_windows.go",
+        "sha256": "99439134114753b37580e19e676eca5759490de743e643d9b188a427496c7173"
+      },
+      {
+        "path": "internal/native/clientapi/nodes.go",
+        "sha256": "19f7d19347656bee0f52595f891d8a9c2e45f1bcdb14c5deb46bc27bf559fc8e"
+      },
+      {
+        "path": "internal/native/clientapi/sync.go",
+        "sha256": "d3f571704d95543a160544959c18b571f0008a03c628378664c74966bd1dbec3"
+      },
+      {
+        "path": "internal/native/clientapi/tls.go",
+        "sha256": "45a1112b04e46c416a60d6cee4a792267e48f245b29dffe9b56c07c1c2f227e2"
+      },
+      {
+        "path": "internal/native/clientapi/trust.go",
+        "sha256": "db3385d7ca2167d1f52f503630dd4575a98b68e1a65b516eab0f88cf5c8e56a7"
+      },
+      {
+        "path": "internal/native/fvproxy/control.go",
+        "sha256": "e58972e9af651ed906d8c9a781e1747db1eb9ee688e8cc74171fd5c31b9ce0f5"
+      },
+      {
+        "path": "internal/native/fvproxy/engine.go",
+        "sha256": "8b71a812f37807c9ca72cd2b30748fe2ecf6084bd9e9eb04e1a02d6fe2a45bff"
+      },
+      {
+        "path": "internal/native/fvproxy/engine_conn.go",
+        "sha256": "3458f795139750272a872a8bb0d850c1b9d4ec7653cda8b7c4c7ef53581fb5f9"
+      },
+      {
+        "path": "internal/native/fvproxy/wire.go",
+        "sha256": "46d9f697c77ed24e25afd48414dbd4c1af0f7fd4d0770549e791364bfdf62c69"
+      },
+      {
+        "path": "internal/native/localproxy/http.go",
+        "sha256": "bc53e2a6612260b7f11cf52d3b6dbaf5a3b9dbed867ce94a9ed15cbf31b27c13"
+      },
+      {
+        "path": "internal/native/localproxy/server.go",
+        "sha256": "07493ec805dc24a30387225d5e40878f66e1f774babdfcdf5059d4270a2c2728"
+      },
+      {
+        "path": "internal/native/localproxy/socks.go",
+        "sha256": "4601ab795e76ee4606b85bced3d64a9a1e818a1aff6cd2e874d08c060e8494a8"
+      },
+      {
+        "path": "internal/native/nodemgr/lock_other.go",
+        "sha256": "06c3079667a25a9ea1c8ef35ef25bb746676ef91bcc25471b4283bd5db214df4"
+      },
+      {
+        "path": "internal/native/nodemgr/lock_unix.go",
+        "sha256": "6b152e7ffb5c3dee792aa40ff3d219814d0d937611278f736ab4ddd6f768a0dc"
+      },
+      {
+        "path": "internal/native/nodemgr/lock_windows.go",
+        "sha256": "23c04ebc104ffb27c309090a355f82c73855a34d82fed0694b47898dead9705f"
+      },
+      {
+        "path": "internal/native/nodemgr/probe.go",
+        "sha256": "126463c43b58ff7baa939634d0f86ae93c11c0edc666cc4989d3d7940a6ae6e7"
+      },
+      {
+        "path": "internal/native/nodemgr/state.go",
+        "sha256": "01092230ea5187c4d6763849ab683a1f7d1fac88b8afd3042ec27cf35274d0a0"
+      },
+      {
+        "path": "internal/native/privatefile/private_unix.go",
+        "sha256": "41a6c7ca815fc611a080fa488e07c850b5d857595ba736e69102b01bd9f39333"
+      },
+      {
+        "path": "internal/native/privatefile/private_windows.go",
+        "sha256": "46a8e5ecd9e8afd4eee9cb975cb08a5506fe2dd6ab0d63ee59b169632ebec362"
+      },
+      {
+        "path": "internal/native/runtime/files.go",
+        "sha256": "af5adedd1bed533adf672ae0e3507e4b85d47753fb6de1ed1d30b4e3d3459cfe"
+      },
+      {
+        "path": "internal/native/runtime/files_other.go",
+        "sha256": "b442c6b7ade447a8e8f5d89ccf3e41d7440b51f77687bb18bec0e866e1c5ca50"
+      },
+      {
+        "path": "internal/native/runtime/files_unix.go",
+        "sha256": "d90b8ee54252cb6f239e36f582ec13dd05517aef6de43c400392a6579cb5f5e2"
+      },
+      {
+        "path": "internal/native/runtime/files_windows.go",
+        "sha256": "0cc45f5d579c077f6b415c9e553320356050e0c54efdb3332b23430434d4766d"
+      },
+      {
+        "path": "internal/native/runtime/ipc.go",
+        "sha256": "99f5441d0aa30e86039b23f42b694699b25c0a8dda22de0936ffdfd17739ef77"
+      },
+      {
+        "path": "internal/native/runtime/manager.go",
+        "sha256": "b891b00aa1cf99dfbbc12748a9ab11a7415e3e4c260628c9e5fb4d32219f58b0"
+      },
+      {
+        "path": "internal/native/runtime/runtime.go",
+        "sha256": "a60431de7bc25aec2e5edf88316f578ecadd4cd8eeadfd9652a7ba71e2ca3ddd"
+      },
+      {
+        "path": "internal/native/runtime/verify.go",
+        "sha256": "053eb82a32d5bc4ca2a75d56a39b274808dacb7477f0405d3203011d76e378f8"
+      },
+      {
+        "path": "tools/build_release.py",
+        "sha256": "112b5788fcda4ed8a9933dd570501875689fcdcdc6826c1439cbc1048fe66c64"
+      }
+    ]
+  },
+  "login_trust": {
+    "endpoint": "https://login.ajs-app.com/client.php",
+    "spki_sha256": "423ebbdd38f5c452762fb6e2851a404df580d3047f8bcdfec6265298464566af",
+    "source": "Observed public key, explicitly approved by the project maintainer for application distribution; official ownership is not independently verified.",
+    "precedence": [
+      "explicit CLI --tls-pin",
+      "private profile tls_spki_sha256",
+      "bundled exact-endpoint default"
+    ],
+    "certificate_validity_required": true,
+    "automatic_trust_on_first_use": false,
+    "default_pin_persisted_by_init": false,
+    "system_roots_modified": false,
+    "proxy_destination_tls_modified": false
+  },
+  "automated": {
+    "command": "GOTOOLCHAIN=go1.26.10 make check",
+    "go_module_verification": "passed",
+    "go_vet": "passed",
+    "go_race_test_packages_passed": 8,
+    "python_tests": {
+      "run": 26,
+      "passed": 26,
+      "failed": 0
+    },
+    "final_binary_help_policy": {
+      "login": "passed",
+      "refresh": "passed",
+      "nodes": "passed"
+    }
+  },
+  "artifacts": [
+    {
+      "name": "aijiasu-native-linux-amd64",
+      "os": "linux",
+      "arch": "amd64",
+      "size_bytes": 7254178,
+      "sha256": "aafb6cc337cbcc37a14a2b7ae467acbe441f918139782a2b82d7f84a3908c233",
+      "version_injected": "2.0.2",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOAMD64=v1",
+      "bundled_login_spki_present": true,
+      "version_command_executed": true,
+      "format": "static ELF64",
+      "dynamic_loader": false,
+      "dynamic_program_header": false
+    },
+    {
+      "name": "aijiasu-native-linux-arm64",
+      "os": "linux",
+      "arch": "arm64",
+      "size_bytes": 6684834,
+      "sha256": "e563059be6ad3839ce823140c9625f8e920b1315e6d23ebdf576af284b98b253",
+      "version_injected": "2.0.2",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOARM64=v8.0",
+      "bundled_login_spki_present": true,
+      "version_command_executed": true,
+      "format": "static ELF64",
+      "dynamic_loader": false,
+      "dynamic_program_header": false
+    },
+    {
+      "name": "aijiasu-native-macos-amd64",
+      "os": "darwin",
+      "arch": "amd64",
+      "size_bytes": 7445008,
+      "sha256": "915f0871aadf80f2b87608495cb06f96b84a51a954ad2d5aeeb0d134b34e1b91",
+      "version_injected": "2.0.2",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOAMD64=v1",
+      "bundled_login_spki_present": true,
+      "version_command_executed": true,
+      "format": "Mach-O",
+      "minimum_macos": "12.0",
+      "version_output": "aijiasu-native 2.0.2",
+      "strict_signature_verification": "passed",
+      "signature": "ad-hoc"
+    },
+    {
+      "name": "aijiasu-native-macos-arm64",
+      "os": "darwin",
+      "arch": "arm64",
+      "size_bytes": 6806144,
+      "sha256": "4bf041cda65e6fe121751274e189584e9f0708d016ccd7bbb1dafab35ae42003",
+      "version_injected": "2.0.2",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOARM64=v8.0",
+      "bundled_login_spki_present": true,
+      "version_command_executed": true,
+      "format": "Mach-O",
+      "minimum_macos": "12.0",
+      "version_output": "aijiasu-native 2.0.2",
+      "strict_signature_verification": "passed",
+      "signature": "ad-hoc"
+    },
+    {
+      "name": "aijiasu-native-windows-amd64.exe",
+      "os": "windows",
+      "arch": "amd64",
+      "size_bytes": 7524864,
+      "sha256": "45c13b2f14dd22eb19ad645e9bbea7d84535311f51468a8650c0ccf84cdb0292",
+      "version_injected": "2.0.2",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOAMD64=v1",
+      "bundled_login_spki_present": true,
+      "version_command_executed": true,
+      "format": "PE32+",
+      "authenticode_certificate_table_present": false
+    },
+    {
+      "name": "aijiasu-native-windows-arm64.exe",
+      "os": "windows",
+      "arch": "arm64",
+      "size_bytes": 6819840,
+      "sha256": "a45659a6eb6e9a07991285ae7b28c4423b072769ec50599feb8926c33d764ad6",
+      "version_injected": "2.0.2",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOARM64=v8.0",
+      "bundled_login_spki_present": true,
+      "version_command_executed": true,
+      "format": "PE32+",
+      "authenticode_certificate_table_present": false
+    }
+  ],
+  "reproducible_rebuild": {
+    "aijiasu-native-linux-amd64": true,
+    "aijiasu-native-linux-arm64": true,
+    "aijiasu-native-macos-amd64": true,
+    "aijiasu-native-macos-arm64": true,
+    "aijiasu-native-windows-amd64.exe": true,
+    "aijiasu-native-windows-arm64.exe": true
+  },
+  "known_vulnerability_scans": {
+    "source": {
+      "target": "source",
+      "findings": 0,
+      "config": {
+        "protocol_version": "v1.0.0",
+        "scanner_name": "govulncheck",
+        "scanner_version": "v1.9.0",
+        "db": "https://vuln.go.dev",
+        "db_last_modified": "2026-10-21T00:27:29Z",
+        "go_version": "go1.26.10",
+        "scan_level": "symbol",
+        "scan_mode": "source"
+      }
+    },
+    "binaries": [
+      {
+        "target": "aijiasu-native-linux-amd64",
+        "findings": 0,
+        "config": {
+          "protocol_version": "v1.0.0",
+          "scanner_name": "govulncheck",
+          "scanner_version": "v1.9.0",
+          "db": "https://vuln.go.dev",
+          "db_last_modified": "2026-10-21T00:27:29Z",
+          "scan_level": "symbol",
+          "scan_mode": "binary"
+        },
+        "sha256": "aafb6cc337cbcc37a14a2b7ae467acbe441f918139782a2b82d7f84a3908c233"
+      },
+      {
+        "target": "aijiasu-native-linux-arm64",
+        "findings": 0,
+        "config": {
+          "protocol_version": "v1.0.0",
+          "scanner_name": "govulncheck",
+          "scanner_version": "v1.9.0",
+          "db": "https://vuln.go.dev",
+          "db_last_modified": "2026-10-21T00:27:29Z",
+          "scan_level": "symbol",
+          "scan_mode": "binary"
+        },
+        "sha256": "e563059be6ad3839ce823140c9625f8e920b1315e6d23ebdf576af284b98b253"
+      },
+      {
+        "target": "aijiasu-native-macos-amd64",
+        "findings": 0,
+        "config": {
+          "protocol_version": "v1.0.0",
+          "scanner_name": "govulncheck",
+          "scanner_version": "v1.9.0",
+          "db": "https://vuln.go.dev",
+          "db_last_modified": "2026-10-21T00:27:29Z",
+          "scan_level": "symbol",
+          "scan_mode": "binary"
+        },
+        "sha256": "915f0871aadf80f2b87608495cb06f96b84a51a954ad2d5aeeb0d134b34e1b91"
+      },
+      {
+        "target": "aijiasu-native-macos-arm64",
+        "findings": 0,
+        "config": {
+          "protocol_version": "v1.0.0",
+          "scanner_name": "govulncheck",
+          "scanner_version": "v1.9.0",
+          "db": "https://vuln.go.dev",
+          "db_last_modified": "2026-10-21T00:27:29Z",
+          "scan_level": "symbol",
+          "scan_mode": "binary"
+        },
+        "sha256": "4bf041cda65e6fe121751274e189584e9f0708d016ccd7bbb1dafab35ae42003"
+      },
+      {
+        "target": "aijiasu-native-windows-amd64.exe",
+        "findings": 0,
+        "config": {
+          "protocol_version": "v1.0.0",
+          "scanner_name": "govulncheck",
+          "scanner_version": "v1.9.0",
+          "db": "https://vuln.go.dev",
+          "db_last_modified": "2026-10-21T00:27:29Z",
+          "scan_level": "symbol",
+          "scan_mode": "binary"
+        },
+        "sha256": "45c13b2f14dd22eb19ad645e9bbea7d84535311f51468a8650c0ccf84cdb0292"
+      },
+      {
+        "target": "aijiasu-native-windows-arm64.exe",
+        "findings": 0,
+        "config": {
+          "protocol_version": "v1.0.0",
+          "scanner_name": "govulncheck",
+          "scanner_version": "v1.9.0",
+          "db": "https://vuln.go.dev",
+          "db_last_modified": "2026-10-21T00:27:29Z",
+          "scan_level": "symbol",
+          "scan_mode": "binary"
+        },
+        "sha256": "a45659a6eb6e9a07991285ae7b28c4423b072769ec50599feb8926c33d764ad6"
+      }
+    ]
+  },
+  "native_live_acceptance": {
+    "checks": 304,
+    "targets": [
+      {
+        "os": "macos",
+        "arch": "arm64",
+        "execution": "native arm64",
+        "binary_sha256": "4bf041cda65e6fe121751274e189584e9f0708d016ccd7bbb1dafab35ae42003",
+        "driver_sha256": "26ee7f1e537224d1a85ed3c9aebd90cdda12b2bc8e82fc5ff1c8cfdde85f4dbb",
+        "report_sha256": "4c01c251535b43ba53776cb124d2afaede8fc8b7c2ad351d72a62aee54c32f55",
+        "checks": 54,
+        "passed": 54,
+        "failed": 0,
+        "fresh_profile_without_pin": true,
+        "explicit_pin_argument": false,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true
+      },
+      {
+        "os": "macos",
+        "arch": "amd64",
+        "execution": "Rosetta",
+        "binary_sha256": "915f0871aadf80f2b87608495cb06f96b84a51a954ad2d5aeeb0d134b34e1b91",
+        "driver_sha256": "3f0408fc26534b8ce56a75d95e9b2c1cc9544ce843e7a2f283c87ed498c9109a",
+        "report_sha256": "d4eba2f4e12051c899a2adcf349b42788ed99668446679a14a8f6e0910f7bc2f",
+        "checks": 54,
+        "passed": 54,
+        "failed": 0,
+        "fresh_profile_without_pin": true,
+        "explicit_pin_argument": false,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true
+      },
+      {
+        "os": "linux",
+        "arch": "arm64",
+        "execution": "Docker Desktop Linux arm64",
+        "binary_sha256": "e563059be6ad3839ce823140c9625f8e920b1315e6d23ebdf576af284b98b253",
+        "driver_sha256": "64f8e963605e5d1e73bf11ffb9daa781129c46a23eef3a8794036bd02636cc8d",
+        "checks": 49,
+        "passed": 49,
+        "failed": 0,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true,
+        "report_sha256": "554abac9f77f927d8599e3e3363362ecf08fc8442291df28d3e745287e354824",
+        "fresh_profile_without_pin": true,
+        "explicit_pin_argument": false
+      },
+      {
+        "os": "linux",
+        "arch": "amd64",
+        "execution": "Docker Desktop Linux with amd64 emulation",
+        "binary_sha256": "aafb6cc337cbcc37a14a2b7ae467acbe441f918139782a2b82d7f84a3908c233",
+        "driver_sha256": "64f8e963605e5d1e73bf11ffb9daa781129c46a23eef3a8794036bd02636cc8d",
+        "checks": 49,
+        "passed": 49,
+        "failed": 0,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true,
+        "report_sha256": "f947650c50361e2f27190a1eabd3ceaa917ade01eaf5fd0b9a12ccbe38c2d7c5",
+        "fresh_profile_without_pin": true,
+        "explicit_pin_argument": false
+      },
+      {
+        "os": "windows",
+        "arch": "arm64",
+        "execution": "Windows 11 ARM virtual machine arm64",
+        "binary_sha256": "a45659a6eb6e9a07991285ae7b28c4423b072769ec50599feb8926c33d764ad6",
+        "driver_sha256": "64f8e963605e5d1e73bf11ffb9daa781129c46a23eef3a8794036bd02636cc8d",
+        "checks": 49,
+        "passed": 49,
+        "failed": 0,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true,
+        "report_sha256": "9996a6a5c4af20ed8c7e5b6ae21a0deac553e89770736d5e190f2ce5a1221e4b",
+        "fresh_profile_without_pin": true,
+        "explicit_pin_argument": false
+      },
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "execution": "Windows 11 ARM virtual machine with amd64 emulation",
+        "binary_sha256": "45c13b2f14dd22eb19ad645e9bbea7d84535311f51468a8650c0ccf84cdb0292",
+        "driver_sha256": "64f8e963605e5d1e73bf11ffb9daa781129c46a23eef3a8794036bd02636cc8d",
+        "checks": 49,
+        "passed": 49,
+        "failed": 0,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true,
+        "report_sha256": "e2033f3404ab1999f263f8f2f097e5625bfef852f34dbdf5d2fccaa03910df2c",
+        "fresh_profile_without_pin": true,
+        "explicit_pin_argument": false
+      }
+    ],
+    "credentials": "Existing local encrypted account; password passed in memory and stdin, never release contents."
+  },
+  "axe_current_native_adapter": {
+    "version": "2.0.2",
+    "binary_sha256": "4bf041cda65e6fe121751274e189584e9f0708d016ccd7bbb1dafab35ae42003",
+    "adapter_sha256": "742257fc2c7a18bc1dc357d953c907a5fd52822c240805b665b5b0d9d8d5c878",
+    "controller_sha256": "2f476bf42ba7b11dc99ec85d9bee9067fa2091af16ec350afa94686d7c66a137",
+    "checks": 20,
+    "passed": 20,
+    "failed": 0,
+    "connect_exercised": true,
+    "report_sha256": "08614bf3ceae66dc5e8f8b7438286119df9d3f986df977ab7c8894be7877de39",
+    "scope": "Current source ServicePlugins install/testConnection and native adapter initialize/login/refresh/nodes/start/status/SOCKS5/HTTP/stop/logout.",
+    "explicit_wrong_pin_rejected": true,
+    "normal_calls_omit_tls_pin": true,
+    "local_component_update_checks": 32,
+    "account_and_instance_records_unchanged": true,
+    "legacy_installed_application": "Older packaged Axe with stdio-v1 resources was not modified; it needs a separate rebuild using the current native integration."
+  },
+  "cleanup": {
+    "owned_docker_containers_removed": true,
+    "original_user_containers_preserved": true,
+    "original_user_container_count": 4,
+    "windows_temporary_root_removed": true,
+    "vm_original_state": "suspended",
+    "vm_final_state": "suspended",
+    "credentials_persisted_by_harness": false,
+    "report_sha256": "138e6dfbf28444c36c374123e2191a48260c7effe6c8fa39c9006a41577d164c"
+  },
+  "observed_failure_and_followup": {
+    "initial_macos_arm64": {
+      "checks": 54,
+      "passed": 53,
+      "failed": 1,
+      "failed_stage": "concurrent_proxy_requests",
+      "report_sha256": "4e4487c6025e6427acfc6cbc4e6fec9511866d3103528231d00cfb2c15b9c494",
+      "cause": "Unknown: the original boolean-only check did not retain request-level diagnostics."
+    },
+    "same_binary_full_repeat": {
+      "checks": 54,
+      "passed": 54,
+      "failed": 0
+    },
+    "additional_focused_requests": {
+      "requests": 16,
+      "passed": 16,
+      "failed": 0,
+      "report_sha256": "c261a6b31d74d8487c223924300658261285e0587268330593bf8513b4a9874a",
+      "groups": [
+        {
+          "round": 1,
+          "name": "direct_before",
+          "concurrency": 2,
+          "results": [
+            {
+              "request": 1,
+              "route": "direct",
+              "target": "ip_check",
+              "success": true,
+              "body_has_ipv4": true,
+              "body_has_example_domain": false,
+              "bytes_received": 68,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 0,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 6.183,
+              "tls_ms": 552.493,
+              "first_byte_ms": 580.831,
+              "total_ms": 580.855
+            },
+            {
+              "request": 2,
+              "route": "direct",
+              "target": "example_https",
+              "success": true,
+              "body_has_ipv4": false,
+              "body_has_example_domain": true,
+              "bytes_received": 577,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 0,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 4.828,
+              "tls_ms": 856.422,
+              "first_byte_ms": 961.669,
+              "total_ms": 961.712
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "name": "same_ip_check",
+          "concurrency": 4,
+          "results": [
+            {
+              "request": 1,
+              "route": "socks5h",
+              "target": "ip_check",
+              "success": true,
+              "body_has_ipv4": true,
+              "body_has_example_domain": false,
+              "bytes_received": 67,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 0,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.215,
+              "tls_ms": 1406.876,
+              "first_byte_ms": 1499.178,
+              "total_ms": 1499.201
+            },
+            {
+              "request": 2,
+              "route": "http",
+              "target": "ip_check",
+              "success": true,
+              "body_has_ipv4": true,
+              "body_has_example_domain": false,
+              "bytes_received": 67,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 200,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.358,
+              "tls_ms": 355.375,
+              "first_byte_ms": 445.041,
+              "total_ms": 445.062
+            },
+            {
+              "request": 3,
+              "route": "socks5h",
+              "target": "ip_check",
+              "success": true,
+              "body_has_ipv4": true,
+              "body_has_example_domain": false,
+              "bytes_received": 67,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 0,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.338,
+              "tls_ms": 339.441,
+              "first_byte_ms": 432.583,
+              "total_ms": 432.605
+            },
+            {
+              "request": 4,
+              "route": "http",
+              "target": "ip_check",
+              "success": true,
+              "body_has_ipv4": true,
+              "body_has_example_domain": false,
+              "bytes_received": 67,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 200,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.218,
+              "tls_ms": 337.388,
+              "first_byte_ms": 419.656,
+              "total_ms": 419.677
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "name": "same_example_https",
+          "concurrency": 4,
+          "results": [
+            {
+              "request": 1,
+              "route": "socks5h",
+              "target": "example_https",
+              "success": true,
+              "body_has_ipv4": false,
+              "body_has_example_domain": true,
+              "bytes_received": 577,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 0,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.306,
+              "tls_ms": 626.685,
+              "first_byte_ms": 897.492,
+              "total_ms": 897.555
+            },
+            {
+              "request": 2,
+              "route": "http",
+              "target": "example_https",
+              "success": true,
+              "body_has_ipv4": false,
+              "body_has_example_domain": true,
+              "bytes_received": 577,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 200,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.255,
+              "tls_ms": 631.642,
+              "first_byte_ms": 1142.181,
+              "total_ms": 1142.223
+            },
+            {
+              "request": 3,
+              "route": "socks5h",
+              "target": "example_https",
+              "success": true,
+              "body_has_ipv4": false,
+              "body_has_example_domain": true,
+              "bytes_received": 577,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 0,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.253,
+              "tls_ms": 1640.266,
+              "first_byte_ms": 1911.577,
+              "total_ms": 1911.641
+            },
+            {
+              "request": 4,
+              "route": "http",
+              "target": "example_https",
+              "success": true,
+              "body_has_ipv4": false,
+              "body_has_example_domain": true,
+              "bytes_received": 577,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 200,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.191,
+              "tls_ms": 688.725,
+              "first_byte_ms": 984.974,
+              "total_ms": 985.023
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "name": "mixed_targets",
+          "concurrency": 4,
+          "results": [
+            {
+              "request": 1,
+              "route": "socks5h",
+              "target": "ip_check",
+              "success": true,
+              "body_has_ipv4": true,
+              "body_has_example_domain": false,
+              "bytes_received": 67,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 0,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.392,
+              "tls_ms": 176.865,
+              "first_byte_ms": 272.408,
+              "total_ms": 272.436
+            },
+            {
+              "request": 2,
+              "route": "http",
+              "target": "example_https",
+              "success": true,
+              "body_has_ipv4": false,
+              "body_has_example_domain": true,
+              "bytes_received": 577,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 200,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.27,
+              "tls_ms": 564.34,
+              "first_byte_ms": 809.093,
+              "total_ms": 809.159
+            },
+            {
+              "request": 3,
+              "route": "socks5h",
+              "target": "example_https",
+              "success": true,
+              "body_has_ipv4": false,
+              "body_has_example_domain": true,
+              "bytes_received": 577,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 0,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.194,
+              "tls_ms": 669.497,
+              "first_byte_ms": 1030.977,
+              "total_ms": 1292.502
+            },
+            {
+              "request": 4,
+              "route": "http",
+              "target": "example_http",
+              "success": true,
+              "body_has_ipv4": false,
+              "body_has_example_domain": true,
+              "bytes_received": 577,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 0,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 0.228,
+              "tls_ms": 0.0,
+              "first_byte_ms": 563.443,
+              "total_ms": 563.706
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "name": "direct_after",
+          "concurrency": 2,
+          "results": [
+            {
+              "request": 1,
+              "route": "direct",
+              "target": "ip_check",
+              "success": true,
+              "body_has_ipv4": true,
+              "body_has_example_domain": false,
+              "bytes_received": 77,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 0,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 7.878,
+              "tls_ms": 89.645,
+              "first_byte_ms": 121.723,
+              "total_ms": 121.746
+            },
+            {
+              "request": 2,
+              "route": "direct",
+              "target": "example_https",
+              "success": true,
+              "body_has_ipv4": false,
+              "body_has_example_domain": true,
+              "bytes_received": 577,
+              "exit_code": 0,
+              "http_code": 200,
+              "proxy_connect_code": 0,
+              "ssl_verify_result": 0,
+              "timed_out": false,
+              "tls_failure": false,
+              "category": "success",
+              "connect_ms": 6.826,
+              "tls_ms": 357.633,
+              "first_byte_ms": 462.893,
+              "total_ms": 462.979
+            }
+          ]
+        }
+      ]
+    },
+    "initial_windows_arm64": {
+      "checks": 40,
+      "passed": 38,
+      "failed": 2,
+      "failed_stages": [
+        "command_failure",
+        "suite_stopped"
+      ],
+      "operation": "connect to the same previously successful node after disconnect, without another password",
+      "runtime_category": "exit_verification_failed",
+      "login_refresh_initial_connection_switch_and_parallel_requests_passed": true,
+      "cleanup_passed": true,
+      "report_sha256": "0af235d4ea7850173d8384e71a442b2075ba114f16c32dca6466e99cc40a5c2c",
+      "cause": "The failure occurred during HTTPS exit verification; the underlying transport cause was not retained."
+    },
+    "windows_arm64_full_repeat": {
+      "checks": 49,
+      "passed": 49,
+      "failed": 0,
+      "same_final_binary": true,
+      "fresh_no_pin_profile": true,
+      "original_acceptance_driver_unchanged": true,
+      "automatic_retries_added": false
+    },
+    "windows_credential_free_direct_https_diagnostics": [
+      {
+        "stage": "windows_direct_https_diagnostic",
+        "host": "myip.ipip.net",
+        "http_status": 200,
+        "elapsed_ms": 203,
+        "category": "ok",
+        "standard_ca_and_hostname_verified": true,
+        "credentials_sent": false,
+        "response_body_recorded": false
+      },
+      {
+        "stage": "windows_direct_https_diagnostic",
+        "host": "example.com",
+        "http_status": null,
+        "elapsed_ms": 422,
+        "category": "tls_verification",
+        "standard_ca_and_hostname_verified": false,
+        "credentials_sent": false,
+        "response_body_recorded": false
+      }
+    ],
+    "production_proxy_code_changed": false,
+    "first_failure_preserved": true
+  },
+  "limits": [
+    "Paid simultaneous-node quota remains enforced; real node authentications were serialized.",
+    "The initial one-off concurrent request failure was not reproduced and its cause is not proven.",
+    "A Windows arm64 reconnect failed HTTPS exit verification once; the initial failure is retained separately from the controlled full repeat.",
+    "A credential-free Windows direct example.com probe failed normal CA/hostname verification; verification was not bypassed and system trust was not changed.",
+    "amd64 execution used Rosetta, Docker Desktop or Windows x64 emulation, not physical x86 hardware.",
+    "macOS ad-hoc signatures are not Developer ID signing or notarization; Windows binaries lack Authenticode.",
+    "Observed default trust is application-maintained; a changed server key requires a trusted update.",
+    "No claim of universal network availability, long-term stability, UDP support or absence of all bugs."
+  ],
+  "publication": {
+    "tag": "v2.0.2",
+    "url": "https://github.com/axe-browser/aijiasu/releases/tag/v2.0.2",
+    "asset_policy": "Exactly six bare binaries; no archives, configs, manifests, docs or checksum attachments.",
+    "previous_releases_preserved": true
+  }
+}

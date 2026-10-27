@@ -139,7 +139,10 @@ func run(ctx context.Context, args []string, stdin io.Reader, stdout, stderr io.
 	}
 }
 
-func runLogin(ctx context.Context, args []string, stdin io.Reader, stdout, stderr io.Writer, dependencies cliDependencies) int {
+func runLogin(ctx context.Context, args []string, stdin io.Reader, stdout, stderr io.Writer, dependencies cliDependencies) (exitCode int) {
+	diagnosticOutput := &loginErrorOutput{writer: stderr, format: "text"}
+	stderr = diagnosticOutput
+	defer func() { diagnosticOutput.finish(exitCode) }()
 	flags := flag.NewFlagSet("login", flag.ContinueOnError)
 	// Flag errors can include user input. Render only fixed messages below.
 	flags.SetOutput(io.Discard)
@@ -168,12 +171,17 @@ func runLogin(ctx context.Context, args []string, stdin io.Reader, stdout, stder
 	flags.StringVar(&profilePath, "profile", "", "私密兼容配置文件")
 	flags.StringVar(&tlsPin, "tls-pin", "", "登录服务公钥 SHA-256 指纹，64 位十六进制")
 	flags.StringVar(&configDirectory, "config-dir", "", "本地配置与会话目录")
+	flags.StringVar(&diagnosticOutput.format, "error-format", "text", "失败输出格式：text 或 json")
 	if err := flags.Parse(args); err != nil {
 		if errors.Is(err, flag.ErrHelp) {
 			printLoginHelp(stdout)
 			return 0
 		}
 		fmt.Fprintln(stderr, "登录参数无效，请运行 aijiasu-native login --help 查看密码选项及长度限制。")
+		return exitUsage
+	}
+	if diagnosticOutput.format != "text" && diagnosticOutput.format != "json" {
+		fmt.Fprintln(stderr, "错误输出格式无效，仅支持 text 或 json。")
 		return exitUsage
 	}
 	if flags.NArg() != 0 {
@@ -273,6 +281,7 @@ func runLogin(ctx context.Context, args []string, stdin io.Reader, stdout, stder
 	}
 	session, err := client.Login(ctx, username, password)
 	if err != nil {
+		diagnosticOutput.diagnostic = clientapi.DiagnoseLoginError(errors.Join(err, ctx.Err()))
 		switch {
 		case errors.Is(err, context.DeadlineExceeded), errors.Is(ctx.Err(), context.DeadlineExceeded):
 			fmt.Fprintln(stderr, "登录请求超时，请检查网络后重试。")
@@ -416,9 +425,11 @@ func printLoginHelp(writer io.Writer) {
   --profile <文件>       仅当前用户可访问的私密兼容配置文件
   --tls-pin <指纹>       明确信任登录服务公钥的 SHA-256（64 位十六进制）
   --config-dir <目录>    本地配置与会话目录
+  --error-format <格式>  失败标准错误格式：text（默认）或 json
 
 默认交互输入密码且不回显。
 -p/--password 中的密码可能出现在终端历史和进程参数中；推荐交互输入或 --password-stdin。
-默认使用系统证书验证；--tls-pin 改为校验指定公钥及证书有效期，请先确认指纹来源可信。
+默认仅对固定爱加速登录入口校验内置公钥指纹及证书有效期；其他入口使用系统证书验证。
+--tls-pin 覆盖本次请求使用的指纹，请先确认指纹来源可信。
 默认兼容配置为配置目录中的 compatibility.json；登录后只保存会话，不保存密码。`)
 }

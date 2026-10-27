@@ -468,7 +468,7 @@ func printClientHelp(writer io.Writer, command string) {
 	}
 	fmt.Fprintf(writer, "用法: aijiasu-native %s [选项]\n\n--config-dir <目录>  私密配置与会话目录\n--json              输出 JSON\n", command)
 	if isNodeCommand(command) {
-		fmt.Fprintln(writer, "--tls-pin <指纹>     刷新时校验指定的登录服务公钥；默认使用系统证书验证")
+		fmt.Fprintln(writer, "--tls-pin <指纹>     刷新时覆盖登录服务公钥指纹；默认仅固定爱加速登录入口使用内置指纹")
 		fmt.Fprintln(writer, "--refresh           从服务端刷新登录状态和节点\n--profile <文件>     私密兼容配置\n-n, --node <值>      节点 ID 精确匹配，或名称包含此值\n-p <省份> -c <城市>  按节点名称筛选")
 		fmt.Fprintln(writer, "--test              测试 TCP 建连延迟并保存结果\n--sort <方式>        latency/name/recent/id\n--favorites         仅收藏节点\n--recent            仅成功使用过的节点\n--limit <数量>       显示或探测候选上限，0 为全部\n--timeout <时间>     单次建连超时，默认 2s\n--budget <时间>      测速总时限，默认 30s\n--concurrency <数量> 测速并发数，默认 8\n\n延迟是含域名解析的 TCP 建连耗时，2 次成功样本的中位数；不代表带宽或账号连接权限。\n排序优先使用 5 分钟内且地址未变的可达结果；最近使用默认显示 20 个节点。")
 	}

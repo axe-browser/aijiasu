@@ -1,0 +1,112 @@
+{
+  "version": "2.0.1",
+  "validation_date": "2026-10-27",
+  "scope": "Optional safe login diagnostics; no real accounts or external login requests",
+  "error_protocol": "aijiasu-error-v1",
+  "source_base": "daa8f93754d45cb1032d87f2be174eeb5f490688",
+  "changed_source_files": [
+    {
+      "path": "cmd/aijiasu-native/main.go",
+      "sha256": "e6fd38fafa628f1436db502b16199f59a764adb941a8121895cb58b898de7957"
+    },
+    {
+      "path": "cmd/aijiasu-native/login_errors.go",
+      "sha256": "ae56a9779e12331a6ffb20a10eb4f79d4c816cdfcad255955a9dbe274598468b"
+    },
+    {
+      "path": "internal/native/clientapi/client.go",
+      "sha256": "8e7b905b4da601e3e77886d74869c250068e583c59ff4ed1fbb2edfa7e91a22d"
+    },
+    {
+      "path": "internal/native/clientapi/errors.go",
+      "sha256": "19fbc41214dfa97391678d36f71bfc2de188f6369915fd4bc62c2be1f649cf91"
+    },
+    {
+      "path": "internal/native/clientapi/errors_unix.go",
+      "sha256": "00d97c292979f92ba2e50bd4063dec32f33c371b96787c5f625fdc4604c69ac4"
+    },
+    {
+      "path": "internal/native/clientapi/errors_windows.go",
+      "sha256": "99439134114753b37580e19e676eca5759490de743e643d9b188a427496c7173"
+    }
+  ],
+  "automated": {
+    "make_check": "passed",
+    "go_mod_verify": "passed",
+    "go_vet": "passed",
+    "go_race_test_packages": 8,
+    "python_tests": 26,
+    "new_loopback_fixtures": [
+      "HTTP 307/401/403/503",
+      "authentication rejection",
+      "invalid response",
+      "TLS certificate rejection",
+      "request timeout",
+      "network EOF",
+      "TCP connection refused",
+      "local DNS NXDOMAIN"
+    ],
+    "sensitive_cause_and_default_text_compatibility": "passed"
+  },
+  "native_smoke": {
+    "arm64_version": "aijiasu-native 2.0.1",
+    "amd64_version_under_rosetta": "aijiasu-native 2.0.1",
+    "strict_signature": "passed",
+    "json_login_local_failure": "passed",
+    "official_reference_initialization": "passed",
+    "idempotent_initialization": "passed",
+    "private_permissions": "passed",
+    "short_path_status_json": "passed",
+    "connect_help": "passed",
+    "account_session_created": false
+  },
+  "artifacts": [
+    {
+      "name": "aijiasu-native-linux-amd64",
+      "sha256": "2ef3ca5ae91b3aff7e8903d3cb03921ccb3939e299725e4ff9f828a46ac42a0f",
+      "size_bytes": 7254178,
+      "signature": "not signed"
+    },
+    {
+      "name": "aijiasu-native-linux-arm64",
+      "sha256": "2fdc92e2d003a32d8e7afc33eb0da36a381d7984975dc86484ce3330becf3c75",
+      "size_bytes": 6684834,
+      "signature": "not signed"
+    },
+    {
+      "name": "aijiasu-native-macos-amd64",
+      "sha256": "e8f037fc6b7719ad4a2da902778fcf4931f0351aa0e5b27ffc99b8ce3f9fe919",
+      "size_bytes": 7444992,
+      "signature": "ad-hoc, strict verified"
+    },
+    {
+      "name": "aijiasu-native-macos-arm64",
+      "sha256": "e2c14df344e7896e7ba0d938989e9f869c5641b5e4010c7e4bd4d757f9b7b872",
+      "size_bytes": 6806144,
+      "signature": "ad-hoc, strict verified"
+    },
+    {
+      "name": "aijiasu-native-windows-amd64.exe",
+      "sha256": "997120e753f3a1cd83e48f31b1ea5e21fd23961686dbe88d1ece1bc27d4a1213",
+      "size_bytes": 7523328,
+      "signature": "not signed"
+    },
+    {
+      "name": "aijiasu-native-windows-arm64.exe",
+      "sha256": "37548f1d0a621d4174143ade9540ad0b78c0d79f2d604edd69446e4b3ce46ea8",
+      "size_bytes": 6819328,
+      "signature": "not signed"
+    }
+  ],
+  "limits": [
+    "No real account login or proxy traffic in this update.",
+    "Linux and Windows were cross-compiled, not run for this update.",
+    "macOS amd64 execution used Rosetta; no physical Intel validation.",
+    "A long macOS TMPDIR fixture exceeded the existing Unix socket path limit; status passed with the short runtime path used by the desktop adapter.",
+    "Ad-hoc signatures are not Developer ID signing or notarization."
+  ],
+  "publication": {
+    "github_release_created": false,
+    "asset_policy": "Only six bare binaries. The separate local desktop manifest is integration metadata, not a Release attachment."
+  }
+}

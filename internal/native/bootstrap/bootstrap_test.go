@@ -227,6 +227,17 @@ func TestInitializeExplicitPinCannotChangeExistingTrust(t *testing.T) {
 	if profile.TLSSPKISHA256 != strings.Repeat("a", 64) {
 		t.Fatal("existing trust changed")
 	}
+	before, err := os.ReadFile(filepath.Join(directory, profileName))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, err := initializeFixture(t.Context(), directory, ""); err != nil {
+		t.Fatal("default initialization rejected existing explicit trust")
+	}
+	after, err := os.ReadFile(filepath.Join(directory, profileName))
+	if err != nil || !bytes.Equal(before, after) {
+		t.Fatal("default initialization rewrote existing explicit trust")
+	}
 }
 
 func TestInitializeConcurrentCallsPublishOnlyOnce(t *testing.T) {

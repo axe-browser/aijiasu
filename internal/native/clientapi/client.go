@@ -27,6 +27,7 @@ var (
 	ErrInvalidResponse  = errors.New("invalid login response")
 	ErrResponseTooLarge = errors.New("login response exceeds size limit")
 	ErrTLSVerification  = errors.New("TLS certificate verification failed")
+	ErrNetworkFailure   = errors.New("login transport failed")
 )
 
 // Profile supplies protocol metadata explicitly; it contains no built-in seed.
@@ -68,6 +69,10 @@ type Client struct {
 }
 
 func NewClient(config Config) (*Client, error) {
+	return newClient(config, bundledLoginTrust)
+}
+
+func newClient(config Config, trust loginTrust) (*Client, error) {
 	endpoint, err := url.Parse(config.Endpoint)
 	if err != nil || endpoint.Scheme != "https" || endpoint.Hostname() == "" ||
 		endpoint.User != nil || endpoint.RawQuery != "" || endpoint.ForceQuery ||
@@ -108,7 +113,7 @@ func NewClient(config Config) (*Client, error) {
 	if httpClient.Timeout <= 0 {
 		httpClient.Timeout = defaultHTTPTimeout
 	}
-	if err := configureTLSPinning(&httpClient, endpoint, config.TLSSPKISHA256); err != nil {
+	if err := configureTLSPinning(&httpClient, endpoint, trust.pin(config.Endpoint, config.TLSSPKISHA256)); err != nil {
 		return nil, err
 	}
 	// A login body and its signature must never be replayed to a redirect target.
@@ -190,7 +195,7 @@ func (client *Client) postAuthenticated(ctx context.Context, authentication map[
 	}
 	defer response.Body.Close()
 	if response.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("login returned HTTP status %d", response.StatusCode)
+		return nil, &HTTPStatusError{StatusCode: response.StatusCode}
 	}
 	data, err := io.ReadAll(io.LimitReader(response.Body, maxResponseBytes+1))
 	if err != nil {
@@ -238,7 +243,7 @@ func safeRequestError(ctx context.Context, err error) error {
 	}
 	// Transport errors may contain URLs or data from a custom transport. Do not
 	// forward their text, or parse errors that can quote server-controlled input.
-	return &safeOperationError{message: "login request failed", cause: err}
+	return &safeOperationError{message: "login request failed", cause: errors.Join(ErrNetworkFailure, err)}
 }
 
 // Error text is safe for display; diagnostic callers can inspect the cause
