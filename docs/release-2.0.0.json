@@ -1,0 +1,548 @@
+{
+  "version": "2.0.0",
+  "tag": "v2.0.0",
+  "validation_date": "2026-10-27",
+  "status": "release_checks_passed",
+  "repository": "axe-browser/aijiasu",
+  "release_url": "https://github.com/axe-browser/aijiasu/releases/tag/v2.0.0",
+  "production_source_fingerprint": {
+    "version": "2.0.0",
+    "algorithm": "sha256",
+    "format": "sorted relative path, NUL, file sha256, LF",
+    "sha256": "d1c6757404fa9ae192aa7d82f7de098fb58182747c1571412aae739df8822d5f",
+    "files": [
+      {
+        "path": "cmd/aijiasu-native/client_commands.go",
+        "sha256": "5397558c1e61a89d8b7ecdb84f038827fe62aadc9e368036e34836c86422324e"
+      },
+      {
+        "path": "cmd/aijiasu-native/init.go",
+        "sha256": "7a2ccae45d0c5a2b0a8a4090a60654bbf27a2fc536e4e071be01e4c5e7ba6d53"
+      },
+      {
+        "path": "cmd/aijiasu-native/main.go",
+        "sha256": "3a2387dc60bfd5221440b6f867b71916c6bfda00ef0c55e4938a5c3bca4d5aea"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_management.go",
+        "sha256": "8046623f23980dc56eea3898819e816049931eb7cba0ac3ee59af82806a6bada"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal.go",
+        "sha256": "56748096cf5f7d65a01e1fa2872c8848b2c30bf9afe393d0d65b03c7752591c9"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_console.go",
+        "sha256": "22274a418df9fd9de35ec417a3b77e8b3ac332eeeaed5cc12c7fabc14591ddf1"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_darwin.go",
+        "sha256": "6b77631f007373324deaf6a0454af8b5d99a3a38c407eea22056dcb8a1f19b5a"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_linux.go",
+        "sha256": "c2e856168d1c1dbe9e5ff01b0c773349e9dacdb9a34dfe000987aab3416626a1"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_other.go",
+        "sha256": "1e603fec60dc533f8c88639bd8d13b4a7fcc60b68a7fc94b5d7d2de009c6e7f1"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_unix.go",
+        "sha256": "507abc9a3a9d1b1e1cc88032e3b89f99604152a37a2539f252bb55ff3026df08"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_windows.go",
+        "sha256": "081610dd813902269180809c8691fe24297104abd7d8e1ac55c88827b045af3e"
+      },
+      {
+        "path": "cmd/aijiasu-native/tls_config.go",
+        "sha256": "a264dd1ac0a4b1be896a1c07f1b33f76de7e32d49a03e83861bf930f54ac3b01"
+      },
+      {
+        "path": "go.mod",
+        "sha256": "9ef31bbc864f21e6cccb7235bea6c06fabb183284a296e9fcb18076e99d95efe"
+      },
+      {
+        "path": "go.sum",
+        "sha256": "cde7b21c6627bd3cfc042453150e8eaf8b6c80aa2df25d96f48b038050945f03"
+      },
+      {
+        "path": "internal/native/authstore/session_lifecycle.go",
+        "sha256": "5ecbfb5f7230b592a130d4deebc337d60fef2f21769736ddeadb2aa7071f0e90"
+      },
+      {
+        "path": "internal/native/authstore/session_lock_other.go",
+        "sha256": "cbf6e597cbbca42b96924d01b02933cda73b2e7668a8c7b9a5fe123e19a06778"
+      },
+      {
+        "path": "internal/native/authstore/session_lock_unix.go",
+        "sha256": "857887414d151595aeace578474fe7b323dcb82550e6bb7e39b491092bbfb289"
+      },
+      {
+        "path": "internal/native/authstore/session_lock_windows.go",
+        "sha256": "6a92114d9683e69e2e1a0be89e4968f4724dc0878ec5c4dfbd72cdc946e1384b"
+      },
+      {
+        "path": "internal/native/authstore/session_update.go",
+        "sha256": "1bd5f042417e667a7fdb6dc71ca832645528477e1425d7c4040af9cb9265bdb3"
+      },
+      {
+        "path": "internal/native/authstore/store.go",
+        "sha256": "2655bea0bd56c3a8d17f6c219d73ce0518b4b073abb150920e3a50f2789c6fc7"
+      },
+      {
+        "path": "internal/native/authstore/transport.go",
+        "sha256": "43575f0a2b39166c83ba05eb1d677a633a168604597de3a7d3fbf14a26d03fae"
+      },
+      {
+        "path": "internal/native/bootstrap/bootstrap.go",
+        "sha256": "8e566e977f638502756ac6701ef5d3d124192b83197921460a4419be121f3ab2"
+      },
+      {
+        "path": "internal/native/clientapi/client.go",
+        "sha256": "71fca6133b8028c0b44ece6ba932058a3c58271bcc6c5b635de8d97930c6e473"
+      },
+      {
+        "path": "internal/native/clientapi/clock_other.go",
+        "sha256": "25ab73f850c7f12b192328ad089705e0eef69a3dd383d3a032af0998c32a5387"
+      },
+      {
+        "path": "internal/native/clientapi/clock_unix.go",
+        "sha256": "86323ed6a2f0f02dd08ed71f83e87734ef613217d8bd71880069206054c71541"
+      },
+      {
+        "path": "internal/native/clientapi/clock_windows.go",
+        "sha256": "14f8d7f67aa3bb8f46a33d7abcb56ac473f03810832ac64c9be2302f1dfc1b82"
+      },
+      {
+        "path": "internal/native/clientapi/encoding.go",
+        "sha256": "84a15a64987bffdb1d31353ba04a3b6ee950010d3e0e7a36c4077d24fd689811"
+      },
+      {
+        "path": "internal/native/clientapi/nodes.go",
+        "sha256": "19f7d19347656bee0f52595f891d8a9c2e45f1bcdb14c5deb46bc27bf559fc8e"
+      },
+      {
+        "path": "internal/native/clientapi/sync.go",
+        "sha256": "d3f571704d95543a160544959c18b571f0008a03c628378664c74966bd1dbec3"
+      },
+      {
+        "path": "internal/native/clientapi/tls.go",
+        "sha256": "45a1112b04e46c416a60d6cee4a792267e48f245b29dffe9b56c07c1c2f227e2"
+      },
+      {
+        "path": "internal/native/fvproxy/control.go",
+        "sha256": "e58972e9af651ed906d8c9a781e1747db1eb9ee688e8cc74171fd5c31b9ce0f5"
+      },
+      {
+        "path": "internal/native/fvproxy/engine.go",
+        "sha256": "8b71a812f37807c9ca72cd2b30748fe2ecf6084bd9e9eb04e1a02d6fe2a45bff"
+      },
+      {
+        "path": "internal/native/fvproxy/engine_conn.go",
+        "sha256": "3458f795139750272a872a8bb0d850c1b9d4ec7653cda8b7c4c7ef53581fb5f9"
+      },
+      {
+        "path": "internal/native/fvproxy/wire.go",
+        "sha256": "46d9f697c77ed24e25afd48414dbd4c1af0f7fd4d0770549e791364bfdf62c69"
+      },
+      {
+        "path": "internal/native/localproxy/http.go",
+        "sha256": "bc53e2a6612260b7f11cf52d3b6dbaf5a3b9dbed867ce94a9ed15cbf31b27c13"
+      },
+      {
+        "path": "internal/native/localproxy/server.go",
+        "sha256": "07493ec805dc24a30387225d5e40878f66e1f774babdfcdf5059d4270a2c2728"
+      },
+      {
+        "path": "internal/native/localproxy/socks.go",
+        "sha256": "4601ab795e76ee4606b85bced3d64a9a1e818a1aff6cd2e874d08c060e8494a8"
+      },
+      {
+        "path": "internal/native/nodemgr/lock_other.go",
+        "sha256": "06c3079667a25a9ea1c8ef35ef25bb746676ef91bcc25471b4283bd5db214df4"
+      },
+      {
+        "path": "internal/native/nodemgr/lock_unix.go",
+        "sha256": "6b152e7ffb5c3dee792aa40ff3d219814d0d937611278f736ab4ddd6f768a0dc"
+      },
+      {
+        "path": "internal/native/nodemgr/lock_windows.go",
+        "sha256": "23c04ebc104ffb27c309090a355f82c73855a34d82fed0694b47898dead9705f"
+      },
+      {
+        "path": "internal/native/nodemgr/probe.go",
+        "sha256": "126463c43b58ff7baa939634d0f86ae93c11c0edc666cc4989d3d7940a6ae6e7"
+      },
+      {
+        "path": "internal/native/nodemgr/state.go",
+        "sha256": "01092230ea5187c4d6763849ab683a1f7d1fac88b8afd3042ec27cf35274d0a0"
+      },
+      {
+        "path": "internal/native/privatefile/private_unix.go",
+        "sha256": "41a6c7ca815fc611a080fa488e07c850b5d857595ba736e69102b01bd9f39333"
+      },
+      {
+        "path": "internal/native/privatefile/private_windows.go",
+        "sha256": "46a8e5ecd9e8afd4eee9cb975cb08a5506fe2dd6ab0d63ee59b169632ebec362"
+      },
+      {
+        "path": "internal/native/runtime/files.go",
+        "sha256": "af5adedd1bed533adf672ae0e3507e4b85d47753fb6de1ed1d30b4e3d3459cfe"
+      },
+      {
+        "path": "internal/native/runtime/files_other.go",
+        "sha256": "b442c6b7ade447a8e8f5d89ccf3e41d7440b51f77687bb18bec0e866e1c5ca50"
+      },
+      {
+        "path": "internal/native/runtime/files_unix.go",
+        "sha256": "d90b8ee54252cb6f239e36f582ec13dd05517aef6de43c400392a6579cb5f5e2"
+      },
+      {
+        "path": "internal/native/runtime/files_windows.go",
+        "sha256": "0cc45f5d579c077f6b415c9e553320356050e0c54efdb3332b23430434d4766d"
+      },
+      {
+        "path": "internal/native/runtime/ipc.go",
+        "sha256": "99f5441d0aa30e86039b23f42b694699b25c0a8dda22de0936ffdfd17739ef77"
+      },
+      {
+        "path": "internal/native/runtime/manager.go",
+        "sha256": "b891b00aa1cf99dfbbc12748a9ab11a7415e3e4c260628c9e5fb4d32219f58b0"
+      },
+      {
+        "path": "internal/native/runtime/runtime.go",
+        "sha256": "a60431de7bc25aec2e5edf88316f578ecadd4cd8eeadfd9652a7ba71e2ca3ddd"
+      },
+      {
+        "path": "internal/native/runtime/verify.go",
+        "sha256": "053eb82a32d5bc4ca2a75d56a39b274808dacb7477f0405d3203011d76e378f8"
+      },
+      {
+        "path": "tools/build_release.py",
+        "sha256": "112b5788fcda4ed8a9933dd570501875689fcdcdc6826c1439cbc1048fe66c64"
+      }
+    ]
+  },
+  "production_source_matches_runtime_accepted_native_candidate_1_0_1": true,
+  "version_only_release_rebuild": true,
+  "artifacts": [
+    {
+      "name": "aijiasu-native-linux-amd64",
+      "os": "linux",
+      "arch": "amd64",
+      "size_bytes": 7245986,
+      "sha256": "da42f50a578015358d194c779fb0a9d63eba301a11e85851bad2bad267148206",
+      "version_injected": "2.0.0",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOAMD64=v1",
+      "format": "static ELF64",
+      "version_command_executed": true,
+      "actual_runtime_acceptance": "passed",
+      "dynamic_loader": false,
+      "dynamic_program_header": false
+    },
+    {
+      "name": "aijiasu-native-linux-arm64",
+      "os": "linux",
+      "arch": "arm64",
+      "size_bytes": 6684834,
+      "sha256": "172aa2de86c1bc75a1abf216a2a2291089c863d60c030e52dad276880c1ec30a",
+      "version_injected": "2.0.0",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOARM64=v8.0",
+      "format": "static ELF64",
+      "version_command_executed": true,
+      "actual_runtime_acceptance": "passed",
+      "dynamic_loader": false,
+      "dynamic_program_header": false
+    },
+    {
+      "name": "aijiasu-native-macos-amd64",
+      "os": "darwin",
+      "arch": "amd64",
+      "size_bytes": 7432256,
+      "sha256": "144e1620e998e7d8d5ac4e562ab645f301ff335a10cde4a8a0049476cdc3edd5",
+      "version_injected": "2.0.0",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOAMD64=v1",
+      "format": "Mach-O",
+      "version_command_executed": true,
+      "actual_runtime_acceptance": "passed",
+      "signature": "ad-hoc",
+      "strict_signature_verification": "passed",
+      "notarized": false
+    },
+    {
+      "name": "aijiasu-native-macos-arm64",
+      "os": "darwin",
+      "arch": "arm64",
+      "size_bytes": 6772960,
+      "sha256": "abbd8c8bb22b5f7882f851e13863fe1086345c4b55f355951c8e9120d58ab90c",
+      "version_injected": "2.0.0",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOARM64=v8.0",
+      "format": "Mach-O",
+      "version_command_executed": true,
+      "actual_runtime_acceptance": "passed",
+      "signature": "ad-hoc",
+      "strict_signature_verification": "passed",
+      "notarized": false
+    },
+    {
+      "name": "aijiasu-native-windows-amd64.exe",
+      "os": "windows",
+      "arch": "amd64",
+      "size_bytes": 7514624,
+      "sha256": "90cb00b937c2b7b9f24f8782927b63b8aec8d11312733b3ff2704d9af9066373",
+      "version_injected": "2.0.0",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOAMD64=v1",
+      "format": "PE32+",
+      "version_command_executed": true,
+      "actual_runtime_acceptance": "passed",
+      "authenticode_signed": false
+    },
+    {
+      "name": "aijiasu-native-windows-arm64.exe",
+      "os": "windows",
+      "arch": "arm64",
+      "size_bytes": 6810112,
+      "sha256": "b5986ef063339908fbacd9f2eaf3873b1d556f8ba67b686ab6000f2cad18fa5c",
+      "version_injected": "2.0.0",
+      "toolchain": "go1.26.10",
+      "cgo_enabled": false,
+      "cpu_baseline": "GOARM64=v8.0",
+      "format": "PE32+",
+      "version_command_executed": true,
+      "actual_runtime_acceptance": "passed",
+      "authenticode_signed": false
+    }
+  ],
+  "reproducible_rebuild": {
+    "aijiasu-native-linux-amd64": true,
+    "aijiasu-native-linux-arm64": true,
+    "aijiasu-native-macos-amd64": true,
+    "aijiasu-native-macos-arm64": true,
+    "aijiasu-native-windows-amd64.exe": true,
+    "aijiasu-native-windows-arm64.exe": true
+  },
+  "known_vulnerability_scans": [
+    {
+      "target": "source",
+      "findings": 0,
+      "scanner": "govulncheck",
+      "scanner_version": "v1.9.0",
+      "database_last_modified": "2026-10-21T00:27:29Z"
+    },
+    {
+      "target": "aijiasu-native-linux-amd64",
+      "findings": 0,
+      "scanner": "govulncheck",
+      "scanner_version": "v1.9.0",
+      "database_last_modified": "2026-10-21T00:27:29Z"
+    },
+    {
+      "target": "aijiasu-native-linux-arm64",
+      "findings": 0,
+      "scanner": "govulncheck",
+      "scanner_version": "v1.9.0",
+      "database_last_modified": "2026-10-21T00:27:29Z"
+    },
+    {
+      "target": "aijiasu-native-macos-amd64",
+      "findings": 0,
+      "scanner": "govulncheck",
+      "scanner_version": "v1.9.0",
+      "database_last_modified": "2026-10-21T00:27:29Z"
+    },
+    {
+      "target": "aijiasu-native-macos-arm64",
+      "findings": 0,
+      "scanner": "govulncheck",
+      "scanner_version": "v1.9.0",
+      "database_last_modified": "2026-10-21T00:27:29Z"
+    },
+    {
+      "target": "aijiasu-native-windows-amd64.exe",
+      "findings": 0,
+      "scanner": "govulncheck",
+      "scanner_version": "v1.9.0",
+      "database_last_modified": "2026-10-21T00:27:29Z"
+    },
+    {
+      "target": "aijiasu-native-windows-arm64.exe",
+      "findings": 0,
+      "scanner": "govulncheck",
+      "scanner_version": "v1.9.0",
+      "database_last_modified": "2026-10-21T00:27:29Z"
+    }
+  ],
+  "python_tests": {
+    "run": 26,
+    "passed": 26,
+    "failed": 0
+  },
+  "automated_source_baseline": {
+    "evidence": "release-1.0.1-runtime-acceptance.json",
+    "linux_arm64": {
+      "go_top_level": 270,
+      "including_subtests": 736,
+      "race_detector": true
+    },
+    "linux_amd64": {
+      "go_top_level": 270,
+      "including_subtests": 736,
+      "execution": "emulated"
+    },
+    "windows_arm64": {
+      "go_top_level": 259,
+      "including_subtests": 679,
+      "native_console_scenarios": 11
+    },
+    "windows_amd64": {
+      "go_top_level": 259,
+      "including_subtests": 679,
+      "native_console_scenarios": 11,
+      "execution": "emulated"
+    }
+  },
+  "release_binary_real_service_acceptance": {
+    "checks": 300,
+    "passed": 300,
+    "failed": 0,
+    "runs": [
+      {
+        "os": "linux",
+        "arch": "arm64",
+        "checks": 49,
+        "passed": 49,
+        "failed": 0,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true,
+        "binary_sha256": "172aa2de86c1bc75a1abf216a2a2291089c863d60c030e52dad276880c1ec30a",
+        "execution": "native ARM64 in Docker Desktop Linux VM"
+      },
+      {
+        "os": "linux",
+        "arch": "amd64",
+        "checks": 49,
+        "passed": 49,
+        "failed": 0,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true,
+        "binary_sha256": "da42f50a578015358d194c779fb0a9d63eba301a11e85851bad2bad267148206",
+        "execution": "Docker Desktop x86_64 emulation"
+      },
+      {
+        "os": "windows",
+        "arch": "arm64",
+        "checks": 49,
+        "passed": 49,
+        "failed": 0,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true,
+        "binary_sha256": "b5986ef063339908fbacd9f2eaf3873b1d556f8ba67b686ab6000f2cad18fa5c",
+        "execution": "native Windows 11 ARM64 VM"
+      },
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "checks": 49,
+        "passed": 49,
+        "failed": 0,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true,
+        "binary_sha256": "90cb00b937c2b7b9f24f8782927b63b8aec8d11312733b3ff2704d9af9066373",
+        "execution": "Windows 11 x64 emulation on ARM64"
+      },
+      {
+        "os": "macos",
+        "arch": "arm64",
+        "checks": 52,
+        "passed": 52,
+        "failed": 0,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true,
+        "binary_sha256": "abbd8c8bb22b5f7882f851e13863fe1086345c4b55f355951c8e9120d58ab90c",
+        "execution": "native ARM64"
+      },
+      {
+        "os": "macos",
+        "arch": "amd64",
+        "checks": 52,
+        "passed": 52,
+        "failed": 0,
+        "authenticated": true,
+        "connected": true,
+        "switched": true,
+        "cleanup_passed": true,
+        "binary_sha256": "144e1620e998e7d8d5ac4e562ab645f301ff335a10cde4a8a0049476cdc3edd5",
+        "execution": "Rosetta 2"
+      }
+    ],
+    "credential_source": "Existing account from local OS-backed safe storage",
+    "password_transport": "Memory and stdin; no password in argv, environment, source or release assets",
+    "paid_node_sessions_tested_serially": true
+  },
+  "initialization": {
+    "all_six_native_binaries_initialized_inside_their_target_system": true,
+    "idempotence": "passed",
+    "private_permission_checks": "passed",
+    "official_reference_sha256_verified": true,
+    "no_official_client_executed": true,
+    "macos_details": [
+      {
+        "os": "macos",
+        "arch": "arm64",
+        "official_download_and_init": "passed",
+        "idempotent_bytes": "passed",
+        "private_permissions": "passed",
+        "account_session_created": false
+      },
+      {
+        "os": "macos",
+        "arch": "amd64",
+        "official_download_and_init": "passed",
+        "idempotent_bytes": "passed",
+        "private_permissions": "passed",
+        "account_session_created": false
+      }
+    ]
+  },
+  "cleanup": {
+    "test_sessions_workers_ports_removed": true,
+    "temporary_linux_containers_removed": true,
+    "preexisting_containers_preserved": true,
+    "windows_temporary_directory_removed": true,
+    "windows_vm_restored_to_original_state": "suspended",
+    "preexisting_user_tools_preserved": true,
+    "system_proxy_dns_or_trust_changed": false
+  },
+  "release_asset_policy": "Exactly six bare native binaries; no configuration, ZIP, docs or SHA256SUMS uploaded as assets",
+  "third_party_notices": "../THIRD_PARTY_NOTICES.md",
+  "limits": [
+    "amd64 runtime checks used Rosetta 2, Docker Desktop or Windows x64 emulation on an ARM64 host; no physical x86 machine was tested.",
+    "Windows runtime checked Windows 11 ARM64; Linux checked Debian 12 containers. Other supported OS versions and long-running conditions were not exhaustively tested.",
+    "macOS uses ad-hoc signing without Developer ID or notarization; Windows has no Authenticode signature.",
+    "The previously user-approved login SPKI configuration was used; the application does not automatically trust observed certificates.",
+    "Server account connection quotas remain enforced; local active TCP streams are a separate metric.",
+    "Finite tests and a dated vulnerability database cannot establish absolute absence of defects."
+  ]
+}

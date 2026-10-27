@@ -1,19 +1,23 @@
-# 环境与私密凭证 (严防泄露)
+# 环境与私密凭证
 .env
 *.enc
-conf/*.enc
-conf/.auth.enc
+compatibility.json
+transport.json
+session.json
+session.lock
+nodes-*.json
+nodes-*.lock
+runtime.sock
+runtime.lock
 
-# 编译二进制产物 (仅限根目录与构建输出)
-/aijiasu
-/bin/aijiasu
-/dist/provider/
+# 编译产物
+/aijiasu-native
+/bin/
+/dist/
 
 # 运行时日志与进程文件
 *.log
 *.pid
-dispatcher.log
-dispatcher.pid
 
 # 系统与 IDE 缓存
 .DS_Store
@@ -21,6 +25,3 @@ dispatcher.pid
 .vscode/
 __pycache__/
 *.pyc
-
-# 节点切换去重记录
-.aijiasu_history.json

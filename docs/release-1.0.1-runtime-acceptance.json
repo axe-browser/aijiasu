@@ -1,0 +1,1154 @@
+{
+  "version": "1.0.1",
+  "validation_date": "2026-10-27",
+  "status": "runtime_acceptance_passed",
+  "scope": "Actual Linux Docker and Windows VM execution of the four existing release binaries",
+  "total_final_real_service_checks": 196,
+  "final_passed": 196,
+  "final_failed": 0,
+  "environments": [
+    {
+      "os": "linux",
+      "arch": "arm64",
+      "distribution": "Debian 12.12",
+      "kernel": "7.0.14-linuxkit",
+      "execution": "native ARM64 Docker Desktop Linux VM",
+      "ordinary_user_id": 1000,
+      "go_toolchain": "go1.26.10",
+      "go_tests": {
+        "race": true,
+        "top_level": 270,
+        "including_subtests": 736,
+        "failed": 0
+      },
+      "go_vet": "passed",
+      "go_mod_verify": "passed",
+      "python_tests": {
+        "run": 26,
+        "passed": 24,
+        "skipped": 2,
+        "skip_reason": "macOS-only signing and atomic publication",
+        "failed": 0
+      }
+    },
+    {
+      "os": "linux",
+      "arch": "amd64",
+      "distribution": "Debian 12.15",
+      "kernel": "7.0.14-linuxkit",
+      "execution": "Docker Desktop x86_64 emulation on ARM64 host",
+      "ordinary_user_id": 1000,
+      "go_toolchain": "go1.26.10",
+      "go_tests": {
+        "race": false,
+        "cgo_enabled": false,
+        "top_level": 270,
+        "including_subtests": 736,
+        "failed": 0
+      },
+      "go_vet": "passed",
+      "go_mod_verify": "passed",
+      "python_tests": {
+        "run": 26,
+        "passed": 24,
+        "skipped": 2,
+        "skip_reason": "macOS-only signing and atomic publication",
+        "failed": 0
+      }
+    },
+    {
+      "os": "windows",
+      "arch": "arm64",
+      "guest_os": "Windows 11 build 22000 ARM64",
+      "execution": "native ARM64",
+      "administrator_token": false,
+      "go_toolchain": "go1.26.10",
+      "go_tests": {
+        "top_level": 259,
+        "including_subtests": 679,
+        "failed": 0,
+        "packages": 9,
+        "includes_native_console": true,
+        "race_detector": false
+      },
+      "go_vet": "passed",
+      "native_console_scenarios": [
+        "password",
+        "unicode-edit",
+        "split-surrogate",
+        "maximum",
+        "unicode-maximum",
+        "oversize-tail",
+        "context-cancel",
+        "oversize-cancel",
+        "console-ctrl-c",
+        "empty-eof",
+        "flush-tail"
+      ]
+    },
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "guest_os": "Windows 11 build 22000 ARM64",
+      "execution": "Windows x64 emulation",
+      "administrator_token": false,
+      "go_toolchain": "go1.26.10",
+      "go_tests": {
+        "top_level": 259,
+        "including_subtests": 679,
+        "failed": 0,
+        "packages": 9,
+        "includes_native_console": true,
+        "race_detector": false
+      },
+      "go_vet": "passed",
+      "native_console_scenarios": [
+        "password",
+        "unicode-edit",
+        "split-surrogate",
+        "maximum",
+        "unicode-maximum",
+        "oversize-tail",
+        "context-cancel",
+        "oversize-cancel",
+        "console-ctrl-c",
+        "empty-eof",
+        "flush-tail"
+      ]
+    }
+  ],
+  "real_service_runs": [
+    {
+      "os": "linux",
+      "arch": "arm64",
+      "binary": "aijiasu-native-linux-arm64",
+      "version": "1.0.1",
+      "sha256": "5686cc60ce3573623fef0ebb80c9012cca87c2d822983bb0753b6598710b4893",
+      "driver_sha256": "9d93c5cc5370630c77acc3209c98382f44140827bcfc150d02ce1b4ade52dfa7",
+      "checks": 49,
+      "passed": 49,
+      "failed": 0,
+      "authenticated": true,
+      "connected": true,
+      "switched": true,
+      "elapsed_seconds": 65,
+      "cleanup_passed": true,
+      "entries": [
+        {
+          "stage": "all_command_help",
+          "ok": true,
+          "commands": 15
+        },
+        {
+          "stage": "status_without_session",
+          "ok": true
+        },
+        {
+          "stage": "real_password_stdin_login",
+          "ok": true
+        },
+        {
+          "stage": "status_cached_not_connected",
+          "ok": true
+        },
+        {
+          "stage": "nodes",
+          "ok": true,
+          "count": 2814
+        },
+        {
+          "stage": "list_alias",
+          "ok": true
+        },
+        {
+          "stage": "real_token_refresh",
+          "ok": true,
+          "count": 2814
+        },
+        {
+          "stage": "nodes_refresh_limit",
+          "ok": true
+        },
+        {
+          "stage": "usable_node_metadata",
+          "ok": true
+        },
+        {
+          "stage": "exact_and_positional_filter",
+          "ok": true
+        },
+        {
+          "stage": "filter_title",
+          "ok": true
+        },
+        {
+          "stage": "filter_province",
+          "ok": true
+        },
+        {
+          "stage": "filter_city",
+          "ok": true
+        },
+        {
+          "stage": "combined_filter",
+          "ok": true
+        },
+        {
+          "stage": "sort_id",
+          "ok": true
+        },
+        {
+          "stage": "sort_name",
+          "ok": true
+        },
+        {
+          "stage": "text_output",
+          "ok": true
+        },
+        {
+          "stage": "recent_initially_empty",
+          "ok": true
+        },
+        {
+          "stage": "parallel_probe_and_latency_sort",
+          "ok": true,
+          "tested": 4,
+          "reachable": 4
+        },
+        {
+          "stage": "cached_latency_sort",
+          "ok": true
+        },
+        {
+          "stage": "favorite_add_duplicate_persist",
+          "ok": true
+        },
+        {
+          "stage": "favorite_list_and_filter",
+          "ok": true
+        },
+        {
+          "stage": "best_connect_custom_port",
+          "ok": true
+        },
+        {
+          "stage": "socks5_real_https",
+          "ok": true
+        },
+        {
+          "stage": "http_connect_real_https",
+          "ok": true
+        },
+        {
+          "stage": "ordinary_http_forward",
+          "ok": true
+        },
+        {
+          "stage": "four_parallel_proxy_requests",
+          "ok": true,
+          "requests": 4
+        },
+        {
+          "stage": "keepalive_connected",
+          "ok": true
+        },
+        {
+          "stage": "switch_avoids_current_preserves_port",
+          "ok": true
+        },
+        {
+          "stage": "proxy_after_switch",
+          "ok": true
+        },
+        {
+          "stage": "recent_success_order",
+          "ok": true
+        },
+        {
+          "stage": "recent_filter_sort",
+          "ok": true
+        },
+        {
+          "stage": "recent_test_limit_keeps_newest",
+          "ok": true
+        },
+        {
+          "stage": "invalid_switch_preserves_connection",
+          "ok": true
+        },
+        {
+          "stage": "disconnect_keeps_worker",
+          "ok": true
+        },
+        {
+          "stage": "disconnect_has_no_direct_fallback",
+          "ok": true
+        },
+        {
+          "stage": "reconnect_without_password",
+          "ok": true
+        },
+        {
+          "stage": "recent_use_count_increment",
+          "ok": true
+        },
+        {
+          "stage": "favorite_remove_preserves_recent",
+          "ok": true
+        },
+        {
+          "stage": "reconnected_keepalive_and_proxy",
+          "ok": true
+        },
+        {
+          "stage": "private_files_password_not_persisted",
+          "ok": true
+        },
+        {
+          "stage": "stop_cleans_worker_socket_port",
+          "ok": true
+        },
+        {
+          "stage": "stop_idempotent",
+          "ok": true
+        },
+        {
+          "stage": "restart_switch_new_port",
+          "ok": true
+        },
+        {
+          "stage": "logout_cleans_session_worker_port",
+          "ok": true
+        },
+        {
+          "stage": "logout_keeps_node_preferences",
+          "ok": true
+        },
+        {
+          "stage": "logout_idempotent",
+          "ok": true
+        },
+        {
+          "stage": "nodes_require_login_after_logout",
+          "ok": true
+        },
+        {
+          "stage": "cleanup_workers_ports_sessions",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "os": "linux",
+      "arch": "amd64",
+      "binary": "aijiasu-native-linux-amd64",
+      "version": "1.0.1",
+      "sha256": "3ef98fa57b08061437390f1d6612b6193a6906114ce18cba0d46f7a148a07dc1",
+      "driver_sha256": "9d93c5cc5370630c77acc3209c98382f44140827bcfc150d02ce1b4ade52dfa7",
+      "checks": 49,
+      "passed": 49,
+      "failed": 0,
+      "authenticated": true,
+      "connected": true,
+      "switched": true,
+      "elapsed_seconds": 77,
+      "cleanup_passed": true,
+      "entries": [
+        {
+          "stage": "all_command_help",
+          "ok": true,
+          "commands": 15
+        },
+        {
+          "stage": "status_without_session",
+          "ok": true
+        },
+        {
+          "stage": "real_password_stdin_login",
+          "ok": true
+        },
+        {
+          "stage": "status_cached_not_connected",
+          "ok": true
+        },
+        {
+          "stage": "nodes",
+          "ok": true,
+          "count": 2814
+        },
+        {
+          "stage": "list_alias",
+          "ok": true
+        },
+        {
+          "stage": "real_token_refresh",
+          "ok": true,
+          "count": 2814
+        },
+        {
+          "stage": "nodes_refresh_limit",
+          "ok": true
+        },
+        {
+          "stage": "usable_node_metadata",
+          "ok": true
+        },
+        {
+          "stage": "exact_and_positional_filter",
+          "ok": true
+        },
+        {
+          "stage": "filter_title",
+          "ok": true
+        },
+        {
+          "stage": "filter_province",
+          "ok": true
+        },
+        {
+          "stage": "filter_city",
+          "ok": true
+        },
+        {
+          "stage": "combined_filter",
+          "ok": true
+        },
+        {
+          "stage": "sort_id",
+          "ok": true
+        },
+        {
+          "stage": "sort_name",
+          "ok": true
+        },
+        {
+          "stage": "text_output",
+          "ok": true
+        },
+        {
+          "stage": "recent_initially_empty",
+          "ok": true
+        },
+        {
+          "stage": "parallel_probe_and_latency_sort",
+          "ok": true,
+          "tested": 4,
+          "reachable": 4
+        },
+        {
+          "stage": "cached_latency_sort",
+          "ok": true
+        },
+        {
+          "stage": "favorite_add_duplicate_persist",
+          "ok": true
+        },
+        {
+          "stage": "favorite_list_and_filter",
+          "ok": true
+        },
+        {
+          "stage": "best_connect_custom_port",
+          "ok": true
+        },
+        {
+          "stage": "socks5_real_https",
+          "ok": true
+        },
+        {
+          "stage": "http_connect_real_https",
+          "ok": true
+        },
+        {
+          "stage": "ordinary_http_forward",
+          "ok": true
+        },
+        {
+          "stage": "four_parallel_proxy_requests",
+          "ok": true,
+          "requests": 4
+        },
+        {
+          "stage": "keepalive_connected",
+          "ok": true
+        },
+        {
+          "stage": "switch_avoids_current_preserves_port",
+          "ok": true
+        },
+        {
+          "stage": "proxy_after_switch",
+          "ok": true
+        },
+        {
+          "stage": "recent_success_order",
+          "ok": true
+        },
+        {
+          "stage": "recent_filter_sort",
+          "ok": true
+        },
+        {
+          "stage": "recent_test_limit_keeps_newest",
+          "ok": true
+        },
+        {
+          "stage": "invalid_switch_preserves_connection",
+          "ok": true
+        },
+        {
+          "stage": "disconnect_keeps_worker",
+          "ok": true
+        },
+        {
+          "stage": "disconnect_has_no_direct_fallback",
+          "ok": true
+        },
+        {
+          "stage": "reconnect_without_password",
+          "ok": true
+        },
+        {
+          "stage": "recent_use_count_increment",
+          "ok": true
+        },
+        {
+          "stage": "favorite_remove_preserves_recent",
+          "ok": true
+        },
+        {
+          "stage": "reconnected_keepalive_and_proxy",
+          "ok": true
+        },
+        {
+          "stage": "private_files_password_not_persisted",
+          "ok": true
+        },
+        {
+          "stage": "stop_cleans_worker_socket_port",
+          "ok": true
+        },
+        {
+          "stage": "stop_idempotent",
+          "ok": true
+        },
+        {
+          "stage": "restart_switch_new_port",
+          "ok": true
+        },
+        {
+          "stage": "logout_cleans_session_worker_port",
+          "ok": true
+        },
+        {
+          "stage": "logout_keeps_node_preferences",
+          "ok": true
+        },
+        {
+          "stage": "logout_idempotent",
+          "ok": true
+        },
+        {
+          "stage": "nodes_require_login_after_logout",
+          "ok": true
+        },
+        {
+          "stage": "cleanup_workers_ports_sessions",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "os": "windows",
+      "arch": "arm64",
+      "binary": "aijiasu-native-windows-arm64.exe",
+      "version": "1.0.1",
+      "sha256": "25b586d6e2774e46aa69848b4a1f71b6d99a0b46c0af5d6a1e634fd505a2ebef",
+      "driver_sha256": "64f8e963605e5d1e73bf11ffb9daa781129c46a23eef3a8794036bd02636cc8d",
+      "checks": 49,
+      "passed": 49,
+      "failed": 0,
+      "authenticated": true,
+      "connected": true,
+      "switched": true,
+      "elapsed_seconds": 75,
+      "cleanup_passed": true,
+      "entries": [
+        {
+          "stage": "all_command_help",
+          "ok": true,
+          "commands": 15
+        },
+        {
+          "stage": "status_without_session",
+          "ok": true
+        },
+        {
+          "stage": "real_password_stdin_login",
+          "ok": true
+        },
+        {
+          "stage": "status_cached_not_connected",
+          "ok": true
+        },
+        {
+          "stage": "nodes",
+          "ok": true,
+          "count": 2814
+        },
+        {
+          "stage": "list_alias",
+          "ok": true
+        },
+        {
+          "stage": "real_token_refresh",
+          "ok": true,
+          "count": 2814
+        },
+        {
+          "stage": "nodes_refresh_limit",
+          "ok": true
+        },
+        {
+          "stage": "usable_node_metadata",
+          "ok": true
+        },
+        {
+          "stage": "exact_and_positional_filter",
+          "ok": true
+        },
+        {
+          "stage": "filter_title",
+          "ok": true
+        },
+        {
+          "stage": "filter_province",
+          "ok": true
+        },
+        {
+          "stage": "filter_city",
+          "ok": true
+        },
+        {
+          "stage": "combined_filter",
+          "ok": true
+        },
+        {
+          "stage": "sort_id",
+          "ok": true
+        },
+        {
+          "stage": "sort_name",
+          "ok": true
+        },
+        {
+          "stage": "text_output",
+          "ok": true
+        },
+        {
+          "stage": "recent_initially_empty",
+          "ok": true
+        },
+        {
+          "stage": "parallel_probe_and_latency_sort",
+          "ok": true,
+          "tested": 4,
+          "reachable": 4
+        },
+        {
+          "stage": "cached_latency_sort",
+          "ok": true
+        },
+        {
+          "stage": "favorite_add_duplicate_persist",
+          "ok": true
+        },
+        {
+          "stage": "favorite_list_and_filter",
+          "ok": true
+        },
+        {
+          "stage": "best_connect_custom_port",
+          "ok": true
+        },
+        {
+          "stage": "socks5_real_https",
+          "ok": true
+        },
+        {
+          "stage": "http_connect_real_https",
+          "ok": true
+        },
+        {
+          "stage": "ordinary_http_forward",
+          "ok": true
+        },
+        {
+          "stage": "four_parallel_proxy_requests",
+          "ok": true,
+          "requests": 4
+        },
+        {
+          "stage": "keepalive_connected",
+          "ok": true
+        },
+        {
+          "stage": "switch_avoids_current_preserves_port",
+          "ok": true
+        },
+        {
+          "stage": "proxy_after_switch",
+          "ok": true
+        },
+        {
+          "stage": "recent_success_order",
+          "ok": true
+        },
+        {
+          "stage": "recent_filter_sort",
+          "ok": true
+        },
+        {
+          "stage": "recent_test_limit_keeps_newest",
+          "ok": true
+        },
+        {
+          "stage": "invalid_switch_preserves_connection",
+          "ok": true
+        },
+        {
+          "stage": "disconnect_keeps_worker",
+          "ok": true
+        },
+        {
+          "stage": "disconnect_has_no_direct_fallback",
+          "ok": true
+        },
+        {
+          "stage": "reconnect_without_password",
+          "ok": true
+        },
+        {
+          "stage": "recent_use_count_increment",
+          "ok": true
+        },
+        {
+          "stage": "favorite_remove_preserves_recent",
+          "ok": true
+        },
+        {
+          "stage": "reconnected_keepalive_and_proxy",
+          "ok": true
+        },
+        {
+          "stage": "private_files_password_not_persisted",
+          "ok": true
+        },
+        {
+          "stage": "stop_cleans_worker_socket_port",
+          "ok": true
+        },
+        {
+          "stage": "stop_idempotent",
+          "ok": true
+        },
+        {
+          "stage": "restart_switch_new_port",
+          "ok": true
+        },
+        {
+          "stage": "logout_cleans_session_worker_port",
+          "ok": true
+        },
+        {
+          "stage": "logout_keeps_node_preferences",
+          "ok": true
+        },
+        {
+          "stage": "logout_idempotent",
+          "ok": true
+        },
+        {
+          "stage": "nodes_require_login_after_logout",
+          "ok": true
+        },
+        {
+          "stage": "cleanup_workers_ports_sessions",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "binary": "aijiasu-native-windows-amd64.exe",
+      "version": "1.0.1",
+      "sha256": "a4da6f4c5b41d282ff30e8a93075d01b1e0cc1105667469cbb2f750021d653a8",
+      "driver_sha256": "9d93c5cc5370630c77acc3209c98382f44140827bcfc150d02ce1b4ade52dfa7",
+      "checks": 49,
+      "passed": 49,
+      "failed": 0,
+      "authenticated": true,
+      "connected": true,
+      "switched": true,
+      "elapsed_seconds": 99,
+      "cleanup_passed": true,
+      "entries": [
+        {
+          "stage": "all_command_help",
+          "ok": true,
+          "commands": 15
+        },
+        {
+          "stage": "status_without_session",
+          "ok": true
+        },
+        {
+          "stage": "real_password_stdin_login",
+          "ok": true
+        },
+        {
+          "stage": "status_cached_not_connected",
+          "ok": true
+        },
+        {
+          "stage": "nodes",
+          "ok": true,
+          "count": 2814
+        },
+        {
+          "stage": "list_alias",
+          "ok": true
+        },
+        {
+          "stage": "real_token_refresh",
+          "ok": true,
+          "count": 2814
+        },
+        {
+          "stage": "nodes_refresh_limit",
+          "ok": true
+        },
+        {
+          "stage": "usable_node_metadata",
+          "ok": true
+        },
+        {
+          "stage": "exact_and_positional_filter",
+          "ok": true
+        },
+        {
+          "stage": "filter_title",
+          "ok": true
+        },
+        {
+          "stage": "filter_province",
+          "ok": true
+        },
+        {
+          "stage": "filter_city",
+          "ok": true
+        },
+        {
+          "stage": "combined_filter",
+          "ok": true
+        },
+        {
+          "stage": "sort_id",
+          "ok": true
+        },
+        {
+          "stage": "sort_name",
+          "ok": true
+        },
+        {
+          "stage": "text_output",
+          "ok": true
+        },
+        {
+          "stage": "recent_initially_empty",
+          "ok": true
+        },
+        {
+          "stage": "parallel_probe_and_latency_sort",
+          "ok": true,
+          "tested": 4,
+          "reachable": 4
+        },
+        {
+          "stage": "cached_latency_sort",
+          "ok": true
+        },
+        {
+          "stage": "favorite_add_duplicate_persist",
+          "ok": true
+        },
+        {
+          "stage": "favorite_list_and_filter",
+          "ok": true
+        },
+        {
+          "stage": "best_connect_custom_port",
+          "ok": true
+        },
+        {
+          "stage": "socks5_real_https",
+          "ok": true
+        },
+        {
+          "stage": "http_connect_real_https",
+          "ok": true
+        },
+        {
+          "stage": "ordinary_http_forward",
+          "ok": true
+        },
+        {
+          "stage": "four_parallel_proxy_requests",
+          "ok": true,
+          "requests": 4
+        },
+        {
+          "stage": "keepalive_connected",
+          "ok": true
+        },
+        {
+          "stage": "switch_avoids_current_preserves_port",
+          "ok": true
+        },
+        {
+          "stage": "proxy_after_switch",
+          "ok": true
+        },
+        {
+          "stage": "recent_success_order",
+          "ok": true
+        },
+        {
+          "stage": "recent_filter_sort",
+          "ok": true
+        },
+        {
+          "stage": "recent_test_limit_keeps_newest",
+          "ok": true
+        },
+        {
+          "stage": "invalid_switch_preserves_connection",
+          "ok": true
+        },
+        {
+          "stage": "disconnect_keeps_worker",
+          "ok": true
+        },
+        {
+          "stage": "disconnect_has_no_direct_fallback",
+          "ok": true
+        },
+        {
+          "stage": "reconnect_without_password",
+          "ok": true
+        },
+        {
+          "stage": "recent_use_count_increment",
+          "ok": true
+        },
+        {
+          "stage": "favorite_remove_preserves_recent",
+          "ok": true
+        },
+        {
+          "stage": "reconnected_keepalive_and_proxy",
+          "ok": true
+        },
+        {
+          "stage": "private_files_password_not_persisted",
+          "ok": true
+        },
+        {
+          "stage": "stop_cleans_worker_socket_port",
+          "ok": true
+        },
+        {
+          "stage": "stop_idempotent",
+          "ok": true
+        },
+        {
+          "stage": "restart_switch_new_port",
+          "ok": true
+        },
+        {
+          "stage": "logout_cleans_session_worker_port",
+          "ok": true
+        },
+        {
+          "stage": "logout_keeps_node_preferences",
+          "ok": true
+        },
+        {
+          "stage": "logout_idempotent",
+          "ok": true
+        },
+        {
+          "stage": "nodes_require_login_after_logout",
+          "ok": true
+        },
+        {
+          "stage": "cleanup_workers_ports_sessions",
+          "ok": true
+        }
+      ]
+    }
+  ],
+  "initialization": {
+    "native_init_succeeded_on_all_four_targets": true,
+    "configuration_generated_inside_each_guest": true,
+    "official_reference_integrity_checked_by_native_init": true,
+    "login_spki_trust": "Previously explicitly user-approved local pin, unchanged",
+    "no_official_client_runtime_required": true
+  },
+  "credentials": {
+    "source": "Existing account in macOS-backed safe storage",
+    "transport": "Memory and process stdin only; no password in argv, environment, source, report or release asset",
+    "real_node_authentication_runs_serialized": true,
+    "guest_test_sessions_removed": true
+  },
+  "test_changes": {
+    "production_code_changed": false,
+    "changed_or_added_test_files": [
+      {
+        "path": "cmd/aijiasu-native/best_recovery_test.go",
+        "sha256": "253eef960be4cfd0a4adaacbbdcae450908e8f0eb99b5da75b001dc8a09350e9"
+      },
+      {
+        "path": "cmd/aijiasu-native/cache_consistency_test.go",
+        "sha256": "962bd3c532146600ea6ff9139dcd26a01b63c5a0d84d71811d504400271ffaf1"
+      },
+      {
+        "path": "cmd/aijiasu-native/login_integration_test.go",
+        "sha256": "939340a50729a73edbe86d088c341bb54abf4f125331f318d9e00b4b38f68099"
+      },
+      {
+        "path": "cmd/aijiasu-native/login_lifecycle_test.go",
+        "sha256": "5699e1ca6a4e0f8f2e280b272685af3d3ab6509847eabc9398a74272c62134a1"
+      },
+      {
+        "path": "cmd/aijiasu-native/logout_lifecycle_test.go",
+        "sha256": "045153ddc50932a18e21f180a2da1a45e89730c090fecccedc68e8cc764d596a"
+      },
+      {
+        "path": "cmd/aijiasu-native/private_directory_test.go",
+        "sha256": "25ba5d06949e94f4c8a3dd8123350c7f6c46c05a2b90a66cb261099cd6743571"
+      },
+      {
+        "path": "cmd/aijiasu-native/session_refresh_test.go",
+        "sha256": "1d8f7d438e798a7e35c7fbab782e5a6ac195ffd5b61ed55aacc766046d6dcb61"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_windows_integration_test.go",
+        "sha256": "2ff996941015e5dbd9b3e830cc0cde85e5802537544422c4a5a537e53e160700"
+      },
+      {
+        "path": "internal/native/authstore/transport_test.go",
+        "sha256": "2ceff2d359d41ea3813d597349ea40c64301f2491577090b9d68a49eaa2b2c07"
+      }
+    ],
+    "reason": "Create actual private Windows DACL directories instead of assuming chmod 0700; add isolated native Win32 Console integration tests",
+    "security_checks_weakened": false,
+    "linux_affected_package_recheck": [
+      {
+        "arch": "arm64",
+        "race_detector": true,
+        "cgo_enabled": true,
+        "top_level_tests": 115,
+        "tests_including_subtests": 324,
+        "failed": 0,
+        "packages": 2
+      },
+      {
+        "arch": "amd64",
+        "race_detector": false,
+        "cgo_enabled": false,
+        "top_level_tests": 115,
+        "tests_including_subtests": 324,
+        "failed": 0,
+        "packages": 2
+      }
+    ]
+  },
+  "source_snapshot": {
+    "algorithm": "sha256",
+    "format": "sorted relative path, NUL, file SHA-256, LF",
+    "sha256": "72635727bbc318990ab5c0a111f3766c82c00188519fba82008fb9c7d24f7b4a",
+    "file_count": 123,
+    "matches_guest_test_source_snapshots": true
+  },
+  "artifact_rebuild": {
+    "production_source_unchanged": true,
+    "artifacts_unchanged": {
+      "aijiasu-native-linux-amd64": true,
+      "aijiasu-native-windows-amd64.exe": true,
+      "aijiasu-native-macos-arm64": true,
+      "aijiasu-native-windows-arm64.exe": true,
+      "aijiasu-native-macos-amd64": true,
+      "aijiasu-native-linux-arm64": true
+    }
+  },
+  "earlier_attempts_retained": [
+    {
+      "os": "windows",
+      "arch": "arm64",
+      "attempt": 1,
+      "checks": 4,
+      "passed": 3,
+      "failed": 1,
+      "authenticated": false,
+      "connected": false,
+      "switched": false,
+      "category": "request_timeout",
+      "cleanup_passed": true
+    },
+    {
+      "os": "windows",
+      "arch": "arm64",
+      "attempt": 2,
+      "checks": 30,
+      "passed": 29,
+      "failed": 1,
+      "authenticated": true,
+      "connected": true,
+      "switched": false,
+      "category": "command_failed",
+      "cleanup_passed": true
+    }
+  ],
+  "incident_notes": [
+    "First Windows ARM64 login timed out and left no session or worker. Subsequent real login and refresh succeeded without changing TLS or network settings. A credential-free HTTP/1 GET using the approved pin and certificate validity check completed with HTTP 200; TLS handshake took about 7.65 seconds. Cause of the transient timeout was not proven.",
+    "Second Windows ARM64 run authenticated and proxied traffic but switching with only one alternative favorite failed. That alternative was not among the Linux-validated successful nodes. This does not establish an OS defect or prove the candidate failure cause.",
+    "Final Windows ARM64 run used a new initialized private directory, up to four dynamically measured candidates, and a harness timeout covering the existing three-candidate best-selection budget. All 49 checks passed. No node ID was hardcoded, no failure was swallowed, and no production timeout or TLS policy changed.",
+    "Earlier driver SHA and enhanced driver SHA are recorded per run. Enhancement expanded the candidate pool and diagnostics; successful runs still contain 49 checks."
+  ],
+  "cleanup": {
+    "linux_acceptance_containers_removed": true,
+    "preexisting_containers_and_running_states_preserved": true,
+    "docker_daemon_left_running": true,
+    "windows_temporary_source_toolchain_and_configs_removed": true,
+    "windows_remaining_test_processes": 0,
+    "windows_vm_original_state": "suspended",
+    "windows_vm_restored_state": "suspended",
+    "windows_user_applications_preserved": true,
+    "system_proxy_dns_or_trust_changed": false,
+    "host_reports_retained": true
+  },
+  "limits": [
+    "Linux execution used Docker Desktop Linux VMs. amd64 Linux and Windows ran through emulation on an ARM64 host, not physical x86 hardware.",
+    "Windows tested version was Windows 11 build 22000. Other supported versions and Linux distributions were not exhaustively tested.",
+    "Native Win32 Console APIs were exercised in isolated helper consoles; Windows Terminal/ConPTY UI was not separately tested.",
+    "Finite function checks and keepalive observations do not establish day-long reliability or absolute absence of bugs.",
+    "Service outages, candidate-node availability and purchased connection quotas may still cause authentication or connection failures."
+  ],
+  "publication": {
+    "github_release_assets_modified": false,
+    "existing_six_release_binary_bytes_unchanged": true
+  },
+  "previous_evidence": "release-1.0.1-cross-platform.json"
+}

@@ -1,0 +1,511 @@
+{
+  "version": "1.0.1",
+  "validation_date": "2026-10-27",
+  "scope": "Native private configuration initialization; no account login or proxy operations performed in this update",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "format": "concatenated sorted relative path, NUL, lowercase SHA-256, LF",
+    "sha256": "fe77fb0259cd6cddc38be9a4a2b49877ecab2d1be7b74e0f74b7bf4f3a28a405",
+    "files": [
+      {
+        "path": "Makefile",
+        "sha256": "8d8b6d4e5b1eaa96395cbb89e4141d27e897c0314df200e160123d2158da9531"
+      },
+      {
+        "path": "cmd/aijiasu-native/best_recovery_test.go",
+        "sha256": "4e5d051db6f11c92746ea72dc95bf69be67f8c03605cb8d2ddf47e5154459930"
+      },
+      {
+        "path": "cmd/aijiasu-native/cache_consistency_test.go",
+        "sha256": "6d5a6c5dff9dbbaa385e125eec7ef2704e8bea7bd932db455265d5765cf78938"
+      },
+      {
+        "path": "cmd/aijiasu-native/client_commands.go",
+        "sha256": "2dd323cbfe2422a2659724d24999efccc1476357f09400915478724ad8a7e715"
+      },
+      {
+        "path": "cmd/aijiasu-native/client_commands_test.go",
+        "sha256": "1903fb2adb5f374edd190f0584aed324b9e6e63a4f526641fdb53e5124bb5a33"
+      },
+      {
+        "path": "cmd/aijiasu-native/clock_recovery_test.go",
+        "sha256": "75a5a9f5255e340340d3dc26c6ef5c99b101385441779471d709bc864382598c"
+      },
+      {
+        "path": "cmd/aijiasu-native/init.go",
+        "sha256": "7a2ccae45d0c5a2b0a8a4090a60654bbf27a2fc536e4e071be01e4c5e7ba6d53"
+      },
+      {
+        "path": "cmd/aijiasu-native/init_test.go",
+        "sha256": "1ad790dedf8cc6918f06c051867e7f12af95b59168ee8d9505f28c00507bb179"
+      },
+      {
+        "path": "cmd/aijiasu-native/login_integration_test.go",
+        "sha256": "235f27069e73f1e2700384a751e1761216c5fbf22eb843d09260134f25ca4913"
+      },
+      {
+        "path": "cmd/aijiasu-native/login_lifecycle_test.go",
+        "sha256": "8892ec7a99502d92b299ddb2e678e49efe88fbdc62964d4a00e58b1a27b1cbb4"
+      },
+      {
+        "path": "cmd/aijiasu-native/logout_lifecycle_test.go",
+        "sha256": "db43db7bd162176dd5993ba33ccab8122830b76f331e8219326d9c07ba3fe825"
+      },
+      {
+        "path": "cmd/aijiasu-native/main.go",
+        "sha256": "41f95455ef36f4cb096fa929cc53b5305320cf9825ce0fdb93e2d2bf157bd049"
+      },
+      {
+        "path": "cmd/aijiasu-native/main_test.go",
+        "sha256": "edc70df07b3a9c32d092a5c81877e6c0ef62293496ca22ffd1e8c5401f5edec9"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_management.go",
+        "sha256": "8046623f23980dc56eea3898819e816049931eb7cba0ac3ee59af82806a6bada"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_management_foreground_test.go",
+        "sha256": "ad60d1bd09cf07a4eceec6a5ad06cdd60d46e92e21b53c7f03cad2690533a41c"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_management_test.go",
+        "sha256": "629acc85dd86d58bf8c1d465df65471f01fd8189d5d2e814b5f7502c06efec86"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_order_regression_test.go",
+        "sha256": "3a45ad3895f69c80d1aff10c49671ccc9c5e77ca746e2868558036cea6b6074f"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_persistence_cancel_test.go",
+        "sha256": "ad432aae58dfe252ff42dd5d4cc314e7d3974f4099f1c1c0bddc5e1a60b0f750"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_read_cancel_test.go",
+        "sha256": "36846fa31dc66043193be4709f08129bdfdc67c80fee62e74d72aaede7807937"
+      },
+      {
+        "path": "cmd/aijiasu-native/password_argument_test.go",
+        "sha256": "9a1ed5cfd5d3854adc2b35299a30a6b89ba406b2139c3e668ec4d9532b087a11"
+      },
+      {
+        "path": "cmd/aijiasu-native/session_persistence_cancel_test.go",
+        "sha256": "547d95b2f9774d48b55b6404e7bee94fca015bf71507934f89424fa76600188a"
+      },
+      {
+        "path": "cmd/aijiasu-native/session_refresh_test.go",
+        "sha256": "ec57e981688d76e7fbaca7af6bb6d23f7c3c543a2f3008dd663b58bb72bf97a5"
+      },
+      {
+        "path": "cmd/aijiasu-native/startup_stop_test.go",
+        "sha256": "bc96bd54d15941c0c144eb70c6ac3c3ddacf170cb2972c1e507dd9d15848fb96"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal.go",
+        "sha256": "56748096cf5f7d65a01e1fa2872c8848b2c30bf9afe393d0d65b03c7752591c9"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_darwin.go",
+        "sha256": "6b77631f007373324deaf6a0454af8b5d99a3a38c407eea22056dcb8a1f19b5a"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_linux.go",
+        "sha256": "c2e856168d1c1dbe9e5ff01b0c773349e9dacdb9a34dfe000987aab3416626a1"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_other.go",
+        "sha256": "d8c8a5244ef67f35f6cf406b533cf2e8d2d29fb77fbf1144095156e090297bf7"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_pty_test.go",
+        "sha256": "1888fe56e2993849c611f59c1fa0bbe0595eeda98456fcbc6c70ee9ddca485c3"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_unix.go",
+        "sha256": "507abc9a3a9d1b1e1cc88032e3b89f99604152a37a2539f252bb55ff3026df08"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_unix_test.go",
+        "sha256": "3ceb08adf6ec7a77987633b7e0455b8254076c104f6ad7395de44cc26e0d69d3"
+      },
+      {
+        "path": "cmd/aijiasu-native/tls_config.go",
+        "sha256": "a264dd1ac0a4b1be896a1c07f1b33f76de7e32d49a03e83861bf930f54ac3b01"
+      },
+      {
+        "path": "cmd/aijiasu-native/tls_config_test.go",
+        "sha256": "1c153553b256f29477595df8c0cfd08fadf76f13d2e80e3795f8aed8089dc965"
+      },
+      {
+        "path": "go.mod",
+        "sha256": "9ef31bbc864f21e6cccb7235bea6c06fabb183284a296e9fcb18076e99d95efe"
+      },
+      {
+        "path": "go.sum",
+        "sha256": "cde7b21c6627bd3cfc042453150e8eaf8b6c80aa2df25d96f48b038050945f03"
+      },
+      {
+        "path": "internal/native/authstore/empty_nodes_test.go",
+        "sha256": "47ae9818a14d38427f88f4929aa0226e131d5d787ae7c0eedb2084e3eac7b5e1"
+      },
+      {
+        "path": "internal/native/authstore/lifecycle_cancel_test.go",
+        "sha256": "77b620c12bdc04c955adacee11c388ccadd4feb38b8969831acebb97847d590a"
+      },
+      {
+        "path": "internal/native/authstore/session_cancel_test.go",
+        "sha256": "f157a5ea7ce5f45c9ab0175c76bb6d225310100329f26b8f64b9db8d28577f0a"
+      },
+      {
+        "path": "internal/native/authstore/session_lifecycle.go",
+        "sha256": "5ecbfb5f7230b592a130d4deebc337d60fef2f21769736ddeadb2aa7071f0e90"
+      },
+      {
+        "path": "internal/native/authstore/session_lifecycle_test.go",
+        "sha256": "d65e4b137cdcc430201aabd01f2bf410975c168e7ac132c89575e6e964ad6863"
+      },
+      {
+        "path": "internal/native/authstore/session_lock_other.go",
+        "sha256": "843a93810613e677c237c364d099fa4be9d3e346f2e1cdb5f2bc9f188e6ae786"
+      },
+      {
+        "path": "internal/native/authstore/session_lock_unix.go",
+        "sha256": "857887414d151595aeace578474fe7b323dcb82550e6bb7e39b491092bbfb289"
+      },
+      {
+        "path": "internal/native/authstore/session_update.go",
+        "sha256": "5a54e20ed95f2761b3163807b2667130dea3341da02005ac0d148980d8895fc9"
+      },
+      {
+        "path": "internal/native/authstore/session_update_test.go",
+        "sha256": "f9c77de68f9dd3225252965e239f04c5b4875513abca983940b11b86a80f6757"
+      },
+      {
+        "path": "internal/native/authstore/store.go",
+        "sha256": "ebeedc23d14f231d60a66a7b42807df2f9d1dcec9a7c9b6f2988102234236e33"
+      },
+      {
+        "path": "internal/native/authstore/store_test.go",
+        "sha256": "bf9f1361dad9c909d223ed8bd62bd562e4dbe6be53983f0e14a93e68a0b0f08d"
+      },
+      {
+        "path": "internal/native/authstore/transport.go",
+        "sha256": "43575f0a2b39166c83ba05eb1d677a633a168604597de3a7d3fbf14a26d03fae"
+      },
+      {
+        "path": "internal/native/authstore/transport_test.go",
+        "sha256": "a80bec9c9858eb28b6940e8421ca779d191f425f62dbc83d26341443ce3f248d"
+      },
+      {
+        "path": "internal/native/bootstrap/bootstrap.go",
+        "sha256": "34e1e8c32dff110cb4091af45f50840cc8defe1fa18d56da3e8a546d6497ed0b"
+      },
+      {
+        "path": "internal/native/bootstrap/bootstrap_test.go",
+        "sha256": "68dfa1806e094fc9c114d205b606beff377067a422605b7837bb5bfa826d0ebd"
+      },
+      {
+        "path": "internal/native/clientapi/client.go",
+        "sha256": "71fca6133b8028c0b44ece6ba932058a3c58271bcc6c5b635de8d97930c6e473"
+      },
+      {
+        "path": "internal/native/clientapi/client_test.go",
+        "sha256": "22bfc8c7ba9626b0a419c445cc331ed78d9e28b9735b25e7da9d5c94a3126058"
+      },
+      {
+        "path": "internal/native/clientapi/clock_other.go",
+        "sha256": "9c57c60294bcb3c3327d9f84edd3575d45935dcf2ee751501c55457fbeb3bf4a"
+      },
+      {
+        "path": "internal/native/clientapi/clock_unix.go",
+        "sha256": "86323ed6a2f0f02dd08ed71f83e87734ef613217d8bd71880069206054c71541"
+      },
+      {
+        "path": "internal/native/clientapi/empty_nodes_test.go",
+        "sha256": "cf3f2f07b0d6a6ff0b242e5d2a767348303378fdf3a8e6cea35dc64342c3afea"
+      },
+      {
+        "path": "internal/native/clientapi/encoding.go",
+        "sha256": "84a15a64987bffdb1d31353ba04a3b6ee950010d3e0e7a36c4077d24fd689811"
+      },
+      {
+        "path": "internal/native/clientapi/encoding_test.go",
+        "sha256": "df3c503359e4686f8c313322e7c02c3939bde30b402f56a0a9e4dbae8f0fff3b"
+      },
+      {
+        "path": "internal/native/clientapi/nodes.go",
+        "sha256": "19f7d19347656bee0f52595f891d8a9c2e45f1bcdb14c5deb46bc27bf559fc8e"
+      },
+      {
+        "path": "internal/native/clientapi/nodes_test.go",
+        "sha256": "1f805b61e386fe301bdad1a890aaa513dc2ed2a5d1f2544f95f73f3ab10ff497"
+      },
+      {
+        "path": "internal/native/clientapi/response_fuzz_test.go",
+        "sha256": "beedbdecf27efec9e2d37457ec6255b237cd0434d8e028ef6ded5bd54fe336f3"
+      },
+      {
+        "path": "internal/native/clientapi/sync.go",
+        "sha256": "d3f571704d95543a160544959c18b571f0008a03c628378664c74966bd1dbec3"
+      },
+      {
+        "path": "internal/native/clientapi/sync_test.go",
+        "sha256": "3cd007f78c4f46018fbe17dad831c938154d6fbc5fba8761eb02b6e8121950f3"
+      },
+      {
+        "path": "internal/native/clientapi/tls.go",
+        "sha256": "45a1112b04e46c416a60d6cee4a792267e48f245b29dffe9b56c07c1c2f227e2"
+      },
+      {
+        "path": "internal/native/clientapi/tls_test.go",
+        "sha256": "f2165bbd76a36d3b30870158ecc9119d3d3b296424d0af2b2372d98f1e617ec5"
+      },
+      {
+        "path": "internal/native/fvproxy/capacity_test.go",
+        "sha256": "7dcf1327bd79575e126442474c0fa2b0a811db411052a78f25416ce26f38f3d1"
+      },
+      {
+        "path": "internal/native/fvproxy/concurrency_test.go",
+        "sha256": "b0f3e375bed6a51d09aa1838b4092d6c586775386b90f683bcf0fb92a1986ece"
+      },
+      {
+        "path": "internal/native/fvproxy/control.go",
+        "sha256": "e58972e9af651ed906d8c9a781e1747db1eb9ee688e8cc74171fd5c31b9ce0f5"
+      },
+      {
+        "path": "internal/native/fvproxy/control_test.go",
+        "sha256": "4259a23673f1dcfd1615e344ea2d5b62066b7017110c7d96f1381e350d9d49f0"
+      },
+      {
+        "path": "internal/native/fvproxy/engine.go",
+        "sha256": "8b71a812f37807c9ca72cd2b30748fe2ecf6084bd9e9eb04e1a02d6fe2a45bff"
+      },
+      {
+        "path": "internal/native/fvproxy/engine_conn.go",
+        "sha256": "3458f795139750272a872a8bb0d850c1b9d4ec7653cda8b7c4c7ef53581fb5f9"
+      },
+      {
+        "path": "internal/native/fvproxy/engine_test.go",
+        "sha256": "09413fadb0ee1c6678225f295fc574f16e06670ed031759eb7048e3f6601fbf7"
+      },
+      {
+        "path": "internal/native/fvproxy/protocol_fuzz_test.go",
+        "sha256": "bc7ccd7739e1811d6950172322119d17879acea39841c850b82a7bbd538ed9b5"
+      },
+      {
+        "path": "internal/native/fvproxy/reauthentication_test.go",
+        "sha256": "a708ce7c3bc5215e25b58df99637acb83b2bb0f0cc66bd44280e0de0c49a91a6"
+      },
+      {
+        "path": "internal/native/fvproxy/wire.go",
+        "sha256": "46d9f697c77ed24e25afd48414dbd4c1af0f7fd4d0770549e791364bfdf62c69"
+      },
+      {
+        "path": "internal/native/fvproxy/wire_test.go",
+        "sha256": "8a1042a77da42da0f5a14f13e56a69e7afce53945ae8ef5b032534df9e3d192e"
+      },
+      {
+        "path": "internal/native/localproxy/accept_recovery_test.go",
+        "sha256": "2bcfc4e66c1ab6946e833edaf058555dd5a813ee3f88d1df1e54ad82207c5d77"
+      },
+      {
+        "path": "internal/native/localproxy/concurrency_test.go",
+        "sha256": "c7cd5e06a4526bf3398a8c877bc7edd56fe6c434036bc69deae2f8e306acba87"
+      },
+      {
+        "path": "internal/native/localproxy/http.go",
+        "sha256": "bc53e2a6612260b7f11cf52d3b6dbaf5a3b9dbed867ce94a9ed15cbf31b27c13"
+      },
+      {
+        "path": "internal/native/localproxy/http_lifecycle_test.go",
+        "sha256": "8c98f7b2ca265bb48a4340b056701d6a98ee2421ce8a2a5a1ac87641bd82418c"
+      },
+      {
+        "path": "internal/native/localproxy/request_fuzz_test.go",
+        "sha256": "ca694751c37756372022398f0e9053afed7a7d5c7662de5f8636b99dad7f81c5"
+      },
+      {
+        "path": "internal/native/localproxy/server.go",
+        "sha256": "07493ec805dc24a30387225d5e40878f66e1f774babdfcdf5059d4270a2c2728"
+      },
+      {
+        "path": "internal/native/localproxy/server_test.go",
+        "sha256": "5399cdc5315efede8fc46b8cf764eb1ca8b5bfb36059a8b696dccfa4e2141cdb"
+      },
+      {
+        "path": "internal/native/localproxy/socks.go",
+        "sha256": "4601ab795e76ee4606b85bced3d64a9a1e818a1aff6cd2e874d08c060e8494a8"
+      },
+      {
+        "path": "internal/native/nodemgr/cancellation_test.go",
+        "sha256": "38845ae648b8e33628dc724b8639128a7c3740ec260e924a6985c77a6b09922c"
+      },
+      {
+        "path": "internal/native/nodemgr/clock_recovery_test.go",
+        "sha256": "9afb86302577a75e7c04c8cc509f5b0073b53834329ba7233dbefe7a0b85ef9e"
+      },
+      {
+        "path": "internal/native/nodemgr/latency_order_test.go",
+        "sha256": "7ce2ed3954a57540c6666f3051f6f833c214227e598f90c38e678af995b556ff"
+      },
+      {
+        "path": "internal/native/nodemgr/lock_other.go",
+        "sha256": "c595e3bb607ece0d20eea36099b73c1bfef8c9b831564f1e43688d6ffdc59e08"
+      },
+      {
+        "path": "internal/native/nodemgr/lock_unix.go",
+        "sha256": "6b152e7ffb5c3dee792aa40ff3d219814d0d937611278f736ab4ddd6f768a0dc"
+      },
+      {
+        "path": "internal/native/nodemgr/probe.go",
+        "sha256": "126463c43b58ff7baa939634d0f86ae93c11c0edc666cc4989d3d7940a6ae6e7"
+      },
+      {
+        "path": "internal/native/nodemgr/probe_test.go",
+        "sha256": "4d538b1bd13cca334e978adf0b65b95b670be180b250561efbddb74a5b7082f6"
+      },
+      {
+        "path": "internal/native/nodemgr/state.go",
+        "sha256": "061e2e428d6c86146acbfc5a7c4a2cfdfb63153271eed2c88dc3a89f3e3a2434"
+      },
+      {
+        "path": "internal/native/nodemgr/state_test.go",
+        "sha256": "02aafd5f57b635bcc3bb8bd9314cc9c54f3272f4994e19c6ce3d14452bef54c7"
+      },
+      {
+        "path": "internal/native/runtime/files.go",
+        "sha256": "cda519bbfc13e5872b97706c316e369d6236f1dd183a6d2d4bd29a5067df5cbc"
+      },
+      {
+        "path": "internal/native/runtime/files_other.go",
+        "sha256": "f1755cec5f5b0466f2e4edc6507111dc1e124a711516280c7bce4fa723ca6459"
+      },
+      {
+        "path": "internal/native/runtime/files_unix.go",
+        "sha256": "86048daa6990d12311edab0cc7e51e6c50e0a3017495111233595320a0e6e9fe"
+      },
+      {
+        "path": "internal/native/runtime/ipc.go",
+        "sha256": "8e00db137c3f7eb930c1531886ba825cb70cba73444ae9bd0e5d2202b12d27b2"
+      },
+      {
+        "path": "internal/native/runtime/ipc_failure_test.go",
+        "sha256": "2824e5b63f3c08692b0ecc042bbea38a53e832c6f07b99865de38c9876b41c1d"
+      },
+      {
+        "path": "internal/native/runtime/ipc_retry_test.go",
+        "sha256": "6b4e9ed3a6a0310f6bceca6e69067452127d625eb4d3e14b21fa8ac18f376e82"
+      },
+      {
+        "path": "internal/native/runtime/lifecycle_stress_test.go",
+        "sha256": "2c57c14c3188069ac0d8533278d76b79a444ed6698da244190c6ce30e32b121d"
+      },
+      {
+        "path": "internal/native/runtime/logout_startup_test.go",
+        "sha256": "479fc50d8f458603d82ca5b8e0abcf2d6d73e78c63c98e7e63088c6b66487d99"
+      },
+      {
+        "path": "internal/native/runtime/manager.go",
+        "sha256": "b891b00aa1cf99dfbbc12748a9ab11a7415e3e4c260628c9e5fb4d32219f58b0"
+      },
+      {
+        "path": "internal/native/runtime/runtime.go",
+        "sha256": "a60431de7bc25aec2e5edf88316f578ecadd4cd8eeadfd9652a7ba71e2ca3ddd"
+      },
+      {
+        "path": "internal/native/runtime/runtime_test.go",
+        "sha256": "3c47d5e8b3d9bc3a127ad2389b4988963264e0eb336359186ca4e519db207b99"
+      },
+      {
+        "path": "internal/native/runtime/startup_lock_cancel_test.go",
+        "sha256": "2ea2828d6f8864fb6ed8d753dcdbf8bda1be42f35d80c2ccd56760fdf5bf3aab"
+      },
+      {
+        "path": "internal/native/runtime/startup_test.go",
+        "sha256": "12bb19f2d71c459118fc86d2a6c6b2c3f961530e708c5092fb25520acea0a9b3"
+      },
+      {
+        "path": "internal/native/runtime/verify.go",
+        "sha256": "053eb82a32d5bc4ca2a75d56a39b274808dacb7477f0405d3203011d76e378f8"
+      },
+      {
+        "path": "tools/build_release.py",
+        "sha256": "f1f498149d9a5e90de4505c84f1f895defe242b70f2f785d6fa8ad343e003619"
+      },
+      {
+        "path": "tools/prepare_native_login.py",
+        "sha256": "9cdd9f5f500f0c71a2281360f6fe6b0f4cac711b454828bf75c1a5f72c0b9d9a"
+      },
+      {
+        "path": "tools/test_build_release.py",
+        "sha256": "cbc612c6ee472bd6f1c9819285c984efb196df11442126d5dc0421f0444da37a"
+      },
+      {
+        "path": "tools/test_prepare_native_login.py",
+        "sha256": "65545d6538d64db2ecefed45184b51e2dfb73f489ea5c40edd05c7c2de9e5152"
+      }
+    ]
+  },
+  "automated": {
+    "command": "make check",
+    "module_verification": "passed",
+    "go_vet": "passed",
+    "go_race_tests": {
+      "packages": 8,
+      "result": "passed"
+    },
+    "python_tests": {
+      "passed": 23,
+      "failed": 0
+    }
+  },
+  "native_initialization": [
+    {
+      "arch": "arm64",
+      "official_reference_init": "passed",
+      "idempotent_reinitialization": "passed",
+      "private_permissions": "passed",
+      "account_session_created": false
+    },
+    {
+      "arch": "amd64",
+      "official_reference_init": "passed",
+      "idempotent_reinitialization": "passed",
+      "private_permissions": "passed",
+      "account_session_created": false
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "aijiasu-native-macos-arm64",
+      "arch": "arm64",
+      "version": "1.0.1",
+      "size_bytes": 6772960,
+      "sha256": "4b106f6f3d8a35bf53d9c205a10271ec8cb3f8706fc9f1869ce76fce2e57064b",
+      "minimum_macos": "12.0",
+      "signature": "ad-hoc",
+      "strict_signature_verification": "passed",
+      "version_execution": "passed"
+    },
+    {
+      "name": "aijiasu-native-macos-amd64",
+      "arch": "amd64",
+      "version": "1.0.1",
+      "size_bytes": 7432256,
+      "sha256": "6a8bd5453119dd9ba6291d97d103773eb8755d9507fa7253c03a5bea5b70b822",
+      "minimum_macos": "12.0",
+      "signature": "ad-hoc",
+      "strict_signature_verification": "passed",
+      "version_execution": "passed"
+    }
+  ],
+  "previous_evidence": "docs/release-1.0.0.json preserves the earlier account and transport validation; those live account suites were not rerun for this initialization-only update",
+  "limits": [
+    "Signed ad-hoc; not Developer ID signed or notarized.",
+    "amd64 execution on this host uses Rosetta 2; no new physical Intel or macOS version matrix validation.",
+    "Initialization requires network access to the fixed official reference or a hash-matching local ELF; it never embeds private configuration in release files."
+  ],
+  "publication": {
+    "github_release_created": false,
+    "release_asset_policy": "Only the two bare signed macOS binaries; no private configuration or plugin archives."
+  }
+}

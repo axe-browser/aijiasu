@@ -1,3 +1,5 @@
-module aijiasu-docker
+module aijiasu-native
 
-go 1.26.5
+go 1.26.10
+
+require golang.org/x/sys v0.49.0

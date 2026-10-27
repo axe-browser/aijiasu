@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Build six standalone CLI binaries and SHA256SUMS for a GitHub release."""
+"""Build standalone macOS, Linux and Windows release binaries on macOS."""
+
+from __future__ import annotations
 
 import argparse
-import hashlib
+import ctypes
 import os
 from pathlib import Path
 import platform
@@ -15,13 +17,31 @@ import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 PLATFORMS = (
-    ("linux", "amd64", "linux"),
-    ("linux", "arm64", "linux"),
     ("darwin", "amd64", "macos"),
     ("darwin", "arm64", "macos"),
+    ("linux", "amd64", "linux"),
+    ("linux", "arm64", "linux"),
     ("windows", "amd64", "windows"),
     ("windows", "arm64", "windows"),
 )
+RENAME_EXCL = 0x00000004
+RELEASE_TOOLCHAIN = "go1.26.10"
+
+
+def publish_directory(staging: Path, output: Path) -> None:
+    """Atomically publish on macOS without replacing any concurrent destination."""
+    library = ctypes.CDLL(None, use_errno=True)
+    try:
+        rename = library.renamex_np
+    except AttributeError:
+        raise RuntimeError("当前 macOS 环境不支持排他发布目录。") from None
+    rename.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_uint]
+    rename.restype = ctypes.c_int
+    # os.rename may replace an existing empty directory. RENAME_EXCL makes the
+    # final absence check and rename one operation, including concurrent builds.
+    if rename(os.fsencode(staging), os.fsencode(output), RENAME_EXCL) != 0:
+        code = ctypes.get_errno()
+        raise OSError(code, os.strerror(code), str(output))
 
 
 def build(version: str, output: Path | None = None) -> Path:
@@ -31,38 +51,45 @@ def build(version: str, output: Path | None = None) -> Path:
     if platform.system() != "Darwin":
         raise RuntimeError("构建完整发布产物需要 macOS 代码签名环境。")
     if output is None:
-        output = Path(tempfile.gettempdir()) / f"aijiasu-release-{version}-{uuid.uuid4().hex[:8]}"
+        output = Path(tempfile.gettempdir()) / f"aijiasu-native-release-{version}-{uuid.uuid4().hex[:8]}"
     output = output.expanduser().absolute()
     if output.exists() or output.is_symlink():
         raise FileExistsError(f"发布目录已存在，拒绝覆盖: {output}")
-    with tempfile.TemporaryDirectory(prefix="aijiasu-release-build-") as temporary:
+    with tempfile.TemporaryDirectory(prefix="aijiasu-native-release-build-") as temporary:
         staging = Path(temporary)
-        assets = []
+        assets: list[tuple[Path, bool]] = []
         for goos, goarch, asset_os in PLATFORMS:
-            executable = staging / f"aijiasu-{asset_os}-{goarch}{'.exe' if goos == 'windows' else ''}"
-            environment = {**os.environ, "CGO_ENABLED": "0", "GOOS": goos, "GOARCH": goarch}
+            extension = ".exe" if goos == "windows" else ""
+            executable = staging / f"aijiasu-native-{asset_os}-{goarch}{extension}"
+            environment = {
+                **os.environ, "CGO_ENABLED": "0", "GOOS": goos, "GOARCH": goarch,
+                "GOTOOLCHAIN": RELEASE_TOOLCHAIN, "GOAMD64": "v1", "GOARM64": "v8.0",
+                "GOFLAGS": "", "GOEXPERIMENT": "", "GOWORK": "off",
+            }
             subprocess.run(
-                ["go", "build", "-buildvcs=false", "-trimpath", "-ldflags=-s -w",
-                 "-o", str(executable), "./cmd/aijiasu"],
+                ["go", "build", "-buildvcs=false", "-trimpath", f"-ldflags=-s -w -X main.version={version}",
+                 "-o", str(executable), "./cmd/aijiasu-native"],
                 cwd=ROOT, env=environment, check=True, timeout=300,
             )
-            if goos == "darwin":
+            signed = goos == "darwin"
+            if signed:
                 subprocess.run(["/usr/bin/codesign", "--force", "--sign", "-", str(executable)],
                                check=True, timeout=30)
                 subprocess.run(["/usr/bin/codesign", "--verify", "--strict", str(executable)],
                                check=True, timeout=30)
-            assets.append(executable)
+            assets.append((executable, signed))
 
-        checksums = staging / "SHA256SUMS"
-        checksums.write_text(
-            "".join(f"{hashlib.sha256(path.read_bytes()).hexdigest()}  {path.name}\n"
-                    for path in sorted(assets)),
-            encoding="ascii",
-        )
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.mkdir()
-        for path in (*assets, checksums):
-            shutil.copy2(path, output / path.name)
+        with tempfile.TemporaryDirectory(prefix=".aijiasu-native-publish-", dir=output.parent) as temporary:
+            publication = Path(temporary) / "release"
+            publication.mkdir()
+            for path, signed in assets:
+                copied = publication / path.name
+                shutil.copy2(path, copied)
+                if signed:
+                    subprocess.run(["/usr/bin/codesign", "--verify", "--strict", str(copied)],
+                                   check=True, timeout=30)
+            publish_directory(publication, output)
     return output
 
 

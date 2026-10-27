@@ -1,0 +1,792 @@
+{
+  "version": "1.0.1",
+  "validation_date": "2026-10-27",
+  "status": "runtime_acceptance_passed",
+  "scope": "macOS, Linux and Windows amd64/arm64 standalone CLI builds",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "format": "concatenated sorted relative path, NUL, lowercase SHA-256, LF",
+    "sha256": "2d6a1a8bbbb73d1f56083fc8237ccae034dc0cea19a8816694bbcaaa6201f5c6",
+    "files": [
+      {
+        "path": "Makefile",
+        "sha256": "8d8b6d4e5b1eaa96395cbb89e4141d27e897c0314df200e160123d2158da9531"
+      },
+      {
+        "path": "cmd/aijiasu-native/best_recovery_test.go",
+        "sha256": "4e5d051db6f11c92746ea72dc95bf69be67f8c03605cb8d2ddf47e5154459930"
+      },
+      {
+        "path": "cmd/aijiasu-native/cache_consistency_test.go",
+        "sha256": "6d5a6c5dff9dbbaa385e125eec7ef2704e8bea7bd932db455265d5765cf78938"
+      },
+      {
+        "path": "cmd/aijiasu-native/client_commands.go",
+        "sha256": "5397558c1e61a89d8b7ecdb84f038827fe62aadc9e368036e34836c86422324e"
+      },
+      {
+        "path": "cmd/aijiasu-native/client_commands_test.go",
+        "sha256": "1903fb2adb5f374edd190f0584aed324b9e6e63a4f526641fdb53e5124bb5a33"
+      },
+      {
+        "path": "cmd/aijiasu-native/clock_recovery_test.go",
+        "sha256": "75a5a9f5255e340340d3dc26c6ef5c99b101385441779471d709bc864382598c"
+      },
+      {
+        "path": "cmd/aijiasu-native/init.go",
+        "sha256": "7a2ccae45d0c5a2b0a8a4090a60654bbf27a2fc536e4e071be01e4c5e7ba6d53"
+      },
+      {
+        "path": "cmd/aijiasu-native/init_test.go",
+        "sha256": "1ad790dedf8cc6918f06c051867e7f12af95b59168ee8d9505f28c00507bb179"
+      },
+      {
+        "path": "cmd/aijiasu-native/login_integration_test.go",
+        "sha256": "235f27069e73f1e2700384a751e1761216c5fbf22eb843d09260134f25ca4913"
+      },
+      {
+        "path": "cmd/aijiasu-native/login_lifecycle_test.go",
+        "sha256": "8892ec7a99502d92b299ddb2e678e49efe88fbdc62964d4a00e58b1a27b1cbb4"
+      },
+      {
+        "path": "cmd/aijiasu-native/logout_lifecycle_test.go",
+        "sha256": "db43db7bd162176dd5993ba33ccab8122830b76f331e8219326d9c07ba3fe825"
+      },
+      {
+        "path": "cmd/aijiasu-native/main.go",
+        "sha256": "3a2387dc60bfd5221440b6f867b71916c6bfda00ef0c55e4938a5c3bca4d5aea"
+      },
+      {
+        "path": "cmd/aijiasu-native/main_test.go",
+        "sha256": "edc70df07b3a9c32d092a5c81877e6c0ef62293496ca22ffd1e8c5401f5edec9"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_management.go",
+        "sha256": "8046623f23980dc56eea3898819e816049931eb7cba0ac3ee59af82806a6bada"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_management_foreground_test.go",
+        "sha256": "ad60d1bd09cf07a4eceec6a5ad06cdd60d46e92e21b53c7f03cad2690533a41c"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_management_test.go",
+        "sha256": "629acc85dd86d58bf8c1d465df65471f01fd8189d5d2e814b5f7502c06efec86"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_order_regression_test.go",
+        "sha256": "3a45ad3895f69c80d1aff10c49671ccc9c5e77ca746e2868558036cea6b6074f"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_persistence_cancel_test.go",
+        "sha256": "ad432aae58dfe252ff42dd5d4cc314e7d3974f4099f1c1c0bddc5e1a60b0f750"
+      },
+      {
+        "path": "cmd/aijiasu-native/node_read_cancel_test.go",
+        "sha256": "36846fa31dc66043193be4709f08129bdfdc67c80fee62e74d72aaede7807937"
+      },
+      {
+        "path": "cmd/aijiasu-native/password_argument_test.go",
+        "sha256": "9a1ed5cfd5d3854adc2b35299a30a6b89ba406b2139c3e668ec4d9532b087a11"
+      },
+      {
+        "path": "cmd/aijiasu-native/session_persistence_cancel_test.go",
+        "sha256": "547d95b2f9774d48b55b6404e7bee94fca015bf71507934f89424fa76600188a"
+      },
+      {
+        "path": "cmd/aijiasu-native/session_refresh_test.go",
+        "sha256": "ec57e981688d76e7fbaca7af6bb6d23f7c3c543a2f3008dd663b58bb72bf97a5"
+      },
+      {
+        "path": "cmd/aijiasu-native/startup_stop_test.go",
+        "sha256": "bc96bd54d15941c0c144eb70c6ac3c3ddacf170cb2972c1e507dd9d15848fb96"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal.go",
+        "sha256": "56748096cf5f7d65a01e1fa2872c8848b2c30bf9afe393d0d65b03c7752591c9"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_console.go",
+        "sha256": "22274a418df9fd9de35ec417a3b77e8b3ac332eeeaed5cc12c7fabc14591ddf1"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_console_test.go",
+        "sha256": "0d9aa6e4631de65824b47171c9342215e75a105a918d31339ffb00f36ca21c7d"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_darwin.go",
+        "sha256": "6b77631f007373324deaf6a0454af8b5d99a3a38c407eea22056dcb8a1f19b5a"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_linux.go",
+        "sha256": "c2e856168d1c1dbe9e5ff01b0c773349e9dacdb9a34dfe000987aab3416626a1"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_other.go",
+        "sha256": "1e603fec60dc533f8c88639bd8d13b4a7fcc60b68a7fc94b5d7d2de009c6e7f1"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_pty_test.go",
+        "sha256": "1888fe56e2993849c611f59c1fa0bbe0595eeda98456fcbc6c70ee9ddca485c3"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_unix.go",
+        "sha256": "507abc9a3a9d1b1e1cc88032e3b89f99604152a37a2539f252bb55ff3026df08"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_unix_test.go",
+        "sha256": "3ceb08adf6ec7a77987633b7e0455b8254076c104f6ad7395de44cc26e0d69d3"
+      },
+      {
+        "path": "cmd/aijiasu-native/terminal_windows.go",
+        "sha256": "081610dd813902269180809c8691fe24297104abd7d8e1ac55c88827b045af3e"
+      },
+      {
+        "path": "cmd/aijiasu-native/tls_config.go",
+        "sha256": "a264dd1ac0a4b1be896a1c07f1b33f76de7e32d49a03e83861bf930f54ac3b01"
+      },
+      {
+        "path": "cmd/aijiasu-native/tls_config_test.go",
+        "sha256": "1c153553b256f29477595df8c0cfd08fadf76f13d2e80e3795f8aed8089dc965"
+      },
+      {
+        "path": "go.mod",
+        "sha256": "9ef31bbc864f21e6cccb7235bea6c06fabb183284a296e9fcb18076e99d95efe"
+      },
+      {
+        "path": "go.sum",
+        "sha256": "cde7b21c6627bd3cfc042453150e8eaf8b6c80aa2df25d96f48b038050945f03"
+      },
+      {
+        "path": "internal/native/authstore/empty_nodes_test.go",
+        "sha256": "47ae9818a14d38427f88f4929aa0226e131d5d787ae7c0eedb2084e3eac7b5e1"
+      },
+      {
+        "path": "internal/native/authstore/lifecycle_cancel_test.go",
+        "sha256": "4e27deee08e4d07f3b54ad5e1edd3c8602bc28e5a80bd292074b84a995c149a8"
+      },
+      {
+        "path": "internal/native/authstore/session_cancel_test.go",
+        "sha256": "dd4fbc00983e1aaacda874e6549780852e0f4e3a199b4983a945451d4347d2ee"
+      },
+      {
+        "path": "internal/native/authstore/session_lifecycle.go",
+        "sha256": "5ecbfb5f7230b592a130d4deebc337d60fef2f21769736ddeadb2aa7071f0e90"
+      },
+      {
+        "path": "internal/native/authstore/session_lifecycle_test.go",
+        "sha256": "34673307b2172c782076dfe802ce96c2ec4d53c408c7e241cbf138470316b0c1"
+      },
+      {
+        "path": "internal/native/authstore/session_lock_other.go",
+        "sha256": "cbf6e597cbbca42b96924d01b02933cda73b2e7668a8c7b9a5fe123e19a06778"
+      },
+      {
+        "path": "internal/native/authstore/session_lock_unix.go",
+        "sha256": "857887414d151595aeace578474fe7b323dcb82550e6bb7e39b491092bbfb289"
+      },
+      {
+        "path": "internal/native/authstore/session_lock_windows.go",
+        "sha256": "6a92114d9683e69e2e1a0be89e4968f4724dc0878ec5c4dfbd72cdc946e1384b"
+      },
+      {
+        "path": "internal/native/authstore/session_update.go",
+        "sha256": "1bd5f042417e667a7fdb6dc71ca832645528477e1425d7c4040af9cb9265bdb3"
+      },
+      {
+        "path": "internal/native/authstore/session_update_test.go",
+        "sha256": "558c59e007889296f167a71841fe3679acf251cda6ed153e9bbb6c4cb991ccd3"
+      },
+      {
+        "path": "internal/native/authstore/store.go",
+        "sha256": "2655bea0bd56c3a8d17f6c219d73ce0518b4b073abb150920e3a50f2789c6fc7"
+      },
+      {
+        "path": "internal/native/authstore/store_test.go",
+        "sha256": "3b4a927269952bdeb32c808a43e083809b9f7a9a03305ea2da0ec94b87b11632"
+      },
+      {
+        "path": "internal/native/authstore/transport.go",
+        "sha256": "43575f0a2b39166c83ba05eb1d677a633a168604597de3a7d3fbf14a26d03fae"
+      },
+      {
+        "path": "internal/native/authstore/transport_test.go",
+        "sha256": "a80bec9c9858eb28b6940e8421ca779d191f425f62dbc83d26341443ce3f248d"
+      },
+      {
+        "path": "internal/native/bootstrap/bootstrap.go",
+        "sha256": "8e566e977f638502756ac6701ef5d3d124192b83197921460a4419be121f3ab2"
+      },
+      {
+        "path": "internal/native/bootstrap/bootstrap_test.go",
+        "sha256": "19fbd9ab156503bca70fd5452c5cb2f6cb3fc5401093141d8c2843dabe9b27b4"
+      },
+      {
+        "path": "internal/native/bootstrap/private_windows_test.go",
+        "sha256": "50dff54fe3ff84746c9756118d5c173d6ea333bd98f30bd6d70203e0cf97a241"
+      },
+      {
+        "path": "internal/native/clientapi/client.go",
+        "sha256": "71fca6133b8028c0b44ece6ba932058a3c58271bcc6c5b635de8d97930c6e473"
+      },
+      {
+        "path": "internal/native/clientapi/client_test.go",
+        "sha256": "20dff4ef39c88fc309e756a0b44581bd2f5380e03f2a291a67b5e545938eef37"
+      },
+      {
+        "path": "internal/native/clientapi/clock_other.go",
+        "sha256": "25ab73f850c7f12b192328ad089705e0eef69a3dd383d3a032af0998c32a5387"
+      },
+      {
+        "path": "internal/native/clientapi/clock_unix.go",
+        "sha256": "86323ed6a2f0f02dd08ed71f83e87734ef613217d8bd71880069206054c71541"
+      },
+      {
+        "path": "internal/native/clientapi/clock_windows.go",
+        "sha256": "14f8d7f67aa3bb8f46a33d7abcb56ac473f03810832ac64c9be2302f1dfc1b82"
+      },
+      {
+        "path": "internal/native/clientapi/empty_nodes_test.go",
+        "sha256": "cf3f2f07b0d6a6ff0b242e5d2a767348303378fdf3a8e6cea35dc64342c3afea"
+      },
+      {
+        "path": "internal/native/clientapi/encoding.go",
+        "sha256": "84a15a64987bffdb1d31353ba04a3b6ee950010d3e0e7a36c4077d24fd689811"
+      },
+      {
+        "path": "internal/native/clientapi/encoding_test.go",
+        "sha256": "df3c503359e4686f8c313322e7c02c3939bde30b402f56a0a9e4dbae8f0fff3b"
+      },
+      {
+        "path": "internal/native/clientapi/nodes.go",
+        "sha256": "19f7d19347656bee0f52595f891d8a9c2e45f1bcdb14c5deb46bc27bf559fc8e"
+      },
+      {
+        "path": "internal/native/clientapi/nodes_test.go",
+        "sha256": "1f805b61e386fe301bdad1a890aaa513dc2ed2a5d1f2544f95f73f3ab10ff497"
+      },
+      {
+        "path": "internal/native/clientapi/response_fuzz_test.go",
+        "sha256": "beedbdecf27efec9e2d37457ec6255b237cd0434d8e028ef6ded5bd54fe336f3"
+      },
+      {
+        "path": "internal/native/clientapi/sync.go",
+        "sha256": "d3f571704d95543a160544959c18b571f0008a03c628378664c74966bd1dbec3"
+      },
+      {
+        "path": "internal/native/clientapi/sync_test.go",
+        "sha256": "3cd007f78c4f46018fbe17dad831c938154d6fbc5fba8761eb02b6e8121950f3"
+      },
+      {
+        "path": "internal/native/clientapi/tls.go",
+        "sha256": "45a1112b04e46c416a60d6cee4a792267e48f245b29dffe9b56c07c1c2f227e2"
+      },
+      {
+        "path": "internal/native/clientapi/tls_test.go",
+        "sha256": "f2165bbd76a36d3b30870158ecc9119d3d3b296424d0af2b2372d98f1e617ec5"
+      },
+      {
+        "path": "internal/native/fvproxy/capacity_test.go",
+        "sha256": "7dcf1327bd79575e126442474c0fa2b0a811db411052a78f25416ce26f38f3d1"
+      },
+      {
+        "path": "internal/native/fvproxy/concurrency_test.go",
+        "sha256": "b0f3e375bed6a51d09aa1838b4092d6c586775386b90f683bcf0fb92a1986ece"
+      },
+      {
+        "path": "internal/native/fvproxy/control.go",
+        "sha256": "e58972e9af651ed906d8c9a781e1747db1eb9ee688e8cc74171fd5c31b9ce0f5"
+      },
+      {
+        "path": "internal/native/fvproxy/control_test.go",
+        "sha256": "4259a23673f1dcfd1615e344ea2d5b62066b7017110c7d96f1381e350d9d49f0"
+      },
+      {
+        "path": "internal/native/fvproxy/engine.go",
+        "sha256": "8b71a812f37807c9ca72cd2b30748fe2ecf6084bd9e9eb04e1a02d6fe2a45bff"
+      },
+      {
+        "path": "internal/native/fvproxy/engine_conn.go",
+        "sha256": "3458f795139750272a872a8bb0d850c1b9d4ec7653cda8b7c4c7ef53581fb5f9"
+      },
+      {
+        "path": "internal/native/fvproxy/engine_test.go",
+        "sha256": "09413fadb0ee1c6678225f295fc574f16e06670ed031759eb7048e3f6601fbf7"
+      },
+      {
+        "path": "internal/native/fvproxy/protocol_fuzz_test.go",
+        "sha256": "bc7ccd7739e1811d6950172322119d17879acea39841c850b82a7bbd538ed9b5"
+      },
+      {
+        "path": "internal/native/fvproxy/reauthentication_test.go",
+        "sha256": "a708ce7c3bc5215e25b58df99637acb83b2bb0f0cc66bd44280e0de0c49a91a6"
+      },
+      {
+        "path": "internal/native/fvproxy/wire.go",
+        "sha256": "46d9f697c77ed24e25afd48414dbd4c1af0f7fd4d0770549e791364bfdf62c69"
+      },
+      {
+        "path": "internal/native/fvproxy/wire_test.go",
+        "sha256": "8a1042a77da42da0f5a14f13e56a69e7afce53945ae8ef5b032534df9e3d192e"
+      },
+      {
+        "path": "internal/native/localproxy/accept_recovery_test.go",
+        "sha256": "2bcfc4e66c1ab6946e833edaf058555dd5a813ee3f88d1df1e54ad82207c5d77"
+      },
+      {
+        "path": "internal/native/localproxy/concurrency_test.go",
+        "sha256": "c7cd5e06a4526bf3398a8c877bc7edd56fe6c434036bc69deae2f8e306acba87"
+      },
+      {
+        "path": "internal/native/localproxy/http.go",
+        "sha256": "bc53e2a6612260b7f11cf52d3b6dbaf5a3b9dbed867ce94a9ed15cbf31b27c13"
+      },
+      {
+        "path": "internal/native/localproxy/http_lifecycle_test.go",
+        "sha256": "8c98f7b2ca265bb48a4340b056701d6a98ee2421ce8a2a5a1ac87641bd82418c"
+      },
+      {
+        "path": "internal/native/localproxy/request_fuzz_test.go",
+        "sha256": "ca694751c37756372022398f0e9053afed7a7d5c7662de5f8636b99dad7f81c5"
+      },
+      {
+        "path": "internal/native/localproxy/server.go",
+        "sha256": "07493ec805dc24a30387225d5e40878f66e1f774babdfcdf5059d4270a2c2728"
+      },
+      {
+        "path": "internal/native/localproxy/server_test.go",
+        "sha256": "5399cdc5315efede8fc46b8cf764eb1ca8b5bfb36059a8b696dccfa4e2141cdb"
+      },
+      {
+        "path": "internal/native/localproxy/socks.go",
+        "sha256": "4601ab795e76ee4606b85bced3d64a9a1e818a1aff6cd2e874d08c060e8494a8"
+      },
+      {
+        "path": "internal/native/nodemgr/cancellation_test.go",
+        "sha256": "0c76c81926a5dcec3ae2c08cf7c82bdd16f715800707fe520b80571e548d9a82"
+      },
+      {
+        "path": "internal/native/nodemgr/clock_recovery_test.go",
+        "sha256": "9afb86302577a75e7c04c8cc509f5b0073b53834329ba7233dbefe7a0b85ef9e"
+      },
+      {
+        "path": "internal/native/nodemgr/latency_order_test.go",
+        "sha256": "7ce2ed3954a57540c6666f3051f6f833c214227e598f90c38e678af995b556ff"
+      },
+      {
+        "path": "internal/native/nodemgr/lock_other.go",
+        "sha256": "06c3079667a25a9ea1c8ef35ef25bb746676ef91bcc25471b4283bd5db214df4"
+      },
+      {
+        "path": "internal/native/nodemgr/lock_unix.go",
+        "sha256": "6b152e7ffb5c3dee792aa40ff3d219814d0d937611278f736ab4ddd6f768a0dc"
+      },
+      {
+        "path": "internal/native/nodemgr/lock_windows.go",
+        "sha256": "23c04ebc104ffb27c309090a355f82c73855a34d82fed0694b47898dead9705f"
+      },
+      {
+        "path": "internal/native/nodemgr/probe.go",
+        "sha256": "126463c43b58ff7baa939634d0f86ae93c11c0edc666cc4989d3d7940a6ae6e7"
+      },
+      {
+        "path": "internal/native/nodemgr/probe_test.go",
+        "sha256": "4d538b1bd13cca334e978adf0b65b95b670be180b250561efbddb74a5b7082f6"
+      },
+      {
+        "path": "internal/native/nodemgr/state.go",
+        "sha256": "01092230ea5187c4d6763849ab683a1f7d1fac88b8afd3042ec27cf35274d0a0"
+      },
+      {
+        "path": "internal/native/nodemgr/state_test.go",
+        "sha256": "6f101fa962155bde89999e02c6b3cc9fdbd5962dbe8ec23b40065a6bbeaaa4b0"
+      },
+      {
+        "path": "internal/native/privatefile/private_unix.go",
+        "sha256": "41a6c7ca815fc611a080fa488e07c850b5d857595ba736e69102b01bd9f39333"
+      },
+      {
+        "path": "internal/native/privatefile/private_windows.go",
+        "sha256": "46a8e5ecd9e8afd4eee9cb975cb08a5506fe2dd6ab0d63ee59b169632ebec362"
+      },
+      {
+        "path": "internal/native/privatefile/private_windows_test.go",
+        "sha256": "6f1b311bd1790ff37bbf492ac35ae523ebf4bca7c5a8e5e3c1c7e96af7d0d8eb"
+      },
+      {
+        "path": "internal/native/runtime/files.go",
+        "sha256": "af5adedd1bed533adf672ae0e3507e4b85d47753fb6de1ed1d30b4e3d3459cfe"
+      },
+      {
+        "path": "internal/native/runtime/files_other.go",
+        "sha256": "b442c6b7ade447a8e8f5d89ccf3e41d7440b51f77687bb18bec0e866e1c5ca50"
+      },
+      {
+        "path": "internal/native/runtime/files_unix.go",
+        "sha256": "d90b8ee54252cb6f239e36f582ec13dd05517aef6de43c400392a6579cb5f5e2"
+      },
+      {
+        "path": "internal/native/runtime/files_windows.go",
+        "sha256": "0cc45f5d579c077f6b415c9e553320356050e0c54efdb3332b23430434d4766d"
+      },
+      {
+        "path": "internal/native/runtime/files_windows_test.go",
+        "sha256": "fd0b02d9a5f93e0ba69fa6d59c2015a57992e8e42e583329fafdb579d2086db5"
+      },
+      {
+        "path": "internal/native/runtime/ipc.go",
+        "sha256": "99f5441d0aa30e86039b23f42b694699b25c0a8dda22de0936ffdfd17739ef77"
+      },
+      {
+        "path": "internal/native/runtime/ipc_failure_test.go",
+        "sha256": "2824e5b63f3c08692b0ecc042bbea38a53e832c6f07b99865de38c9876b41c1d"
+      },
+      {
+        "path": "internal/native/runtime/ipc_retry_test.go",
+        "sha256": "6b4e9ed3a6a0310f6bceca6e69067452127d625eb4d3e14b21fa8ac18f376e82"
+      },
+      {
+        "path": "internal/native/runtime/lifecycle_stress_test.go",
+        "sha256": "2c57c14c3188069ac0d8533278d76b79a444ed6698da244190c6ce30e32b121d"
+      },
+      {
+        "path": "internal/native/runtime/logout_startup_test.go",
+        "sha256": "479fc50d8f458603d82ca5b8e0abcf2d6d73e78c63c98e7e63088c6b66487d99"
+      },
+      {
+        "path": "internal/native/runtime/manager.go",
+        "sha256": "b891b00aa1cf99dfbbc12748a9ab11a7415e3e4c260628c9e5fb4d32219f58b0"
+      },
+      {
+        "path": "internal/native/runtime/runtime.go",
+        "sha256": "a60431de7bc25aec2e5edf88316f578ecadd4cd8eeadfd9652a7ba71e2ca3ddd"
+      },
+      {
+        "path": "internal/native/runtime/runtime_test.go",
+        "sha256": "d9a80eb0b73805704f9a34a1cdefd226545655b181e3fdba23b18a4ebf3eb928"
+      },
+      {
+        "path": "internal/native/runtime/startup_lock_cancel_test.go",
+        "sha256": "2ea2828d6f8864fb6ed8d753dcdbf8bda1be42f35d80c2ccd56760fdf5bf3aab"
+      },
+      {
+        "path": "internal/native/runtime/startup_test.go",
+        "sha256": "12bb19f2d71c459118fc86d2a6c6b2c3f961530e708c5092fb25520acea0a9b3"
+      },
+      {
+        "path": "internal/native/runtime/verify.go",
+        "sha256": "053eb82a32d5bc4ca2a75d56a39b274808dacb7477f0405d3203011d76e378f8"
+      },
+      {
+        "path": "tools/build_release.py",
+        "sha256": "112b5788fcda4ed8a9933dd570501875689fcdcdc6826c1439cbc1048fe66c64"
+      },
+      {
+        "path": "tools/prepare_native_login.py",
+        "sha256": "94d9ac9271e782741a7ff13e0d455fbb25a2aa8f005fffb67ae7fbaac8969fc4"
+      },
+      {
+        "path": "tools/test_build_release.py",
+        "sha256": "4dc5fbf29622901e0749c3950a2a46479a524b72250eefa87bd5e0be93f92046"
+      },
+      {
+        "path": "tools/test_prepare_native_login.py",
+        "sha256": "8115d1e6eea31ae3b0d0e5bdaa04607b3f9394f80313e7e601e9809a5e703d52"
+      }
+    ]
+  },
+  "build": {
+    "host": "macOS 27.0.1 arm64",
+    "toolchain": "go1.26.10",
+    "cgo_enabled": false,
+    "cpu_baselines": {
+      "amd64": "v1",
+      "arm64": "v8.0"
+    },
+    "asset_count": 6,
+    "artifact_formats_and_architectures_verified": true,
+    "source_unchanged_during_build": true,
+    "reproducible_rebuild": {
+      "aijiasu-native-linux-amd64": true,
+      "aijiasu-native-linux-arm64": true,
+      "aijiasu-native-macos-amd64": true,
+      "aijiasu-native-macos-arm64": true,
+      "aijiasu-native-windows-amd64.exe": true,
+      "aijiasu-native-windows-arm64.exe": true
+    }
+  },
+  "automated": {
+    "native_go_tests": {
+      "os": "darwin",
+      "arch": "arm64",
+      "race_detector": true,
+      "packages_with_tests": 8,
+      "top_level_tests": 270,
+      "including_subtests": 736,
+      "failed": 0
+    },
+    "python_tests": {
+      "passed": 26,
+      "failed": 0
+    },
+    "module_verification": "passed",
+    "native_go_vet": "passed",
+    "cross_targets": [
+      {
+        "os": "linux",
+        "arch": "amd64",
+        "binary_compile": "passed",
+        "test_package_compile": "passed",
+        "go_vet": "passed",
+        "target_tests_executed": true,
+        "runtime_evidence": "release-1.0.1-runtime-acceptance.json",
+        "real_account_acceptance": "passed"
+      },
+      {
+        "os": "linux",
+        "arch": "arm64",
+        "binary_compile": "passed",
+        "test_package_compile": "passed",
+        "go_vet": "passed",
+        "target_tests_executed": true,
+        "runtime_evidence": "release-1.0.1-runtime-acceptance.json",
+        "real_account_acceptance": "passed"
+      },
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "binary_compile": "passed",
+        "test_package_compile": "passed",
+        "go_vet": "passed",
+        "target_tests_executed": true,
+        "runtime_evidence": "release-1.0.1-runtime-acceptance.json",
+        "real_account_acceptance": "passed"
+      },
+      {
+        "os": "windows",
+        "arch": "arm64",
+        "binary_compile": "passed",
+        "test_package_compile": "passed",
+        "go_vet": "passed",
+        "target_tests_executed": true,
+        "runtime_evidence": "release-1.0.1-runtime-acceptance.json",
+        "real_account_acceptance": "passed"
+      }
+    ],
+    "known_vulnerability_scans": [
+      {
+        "target": "aijiasu-native-linux-amd64",
+        "scanner": "govulncheck",
+        "scanner_version": "v1.9.0",
+        "database_last_modified": "2026-10-21T00:27:29Z",
+        "findings": 0
+      },
+      {
+        "target": "aijiasu-native-linux-arm64",
+        "scanner": "govulncheck",
+        "scanner_version": "v1.9.0",
+        "database_last_modified": "2026-10-21T00:27:29Z",
+        "findings": 0
+      },
+      {
+        "target": "aijiasu-native-macos-amd64",
+        "scanner": "govulncheck",
+        "scanner_version": "v1.9.0",
+        "database_last_modified": "2026-10-21T00:27:29Z",
+        "findings": 0
+      },
+      {
+        "target": "aijiasu-native-macos-arm64",
+        "scanner": "govulncheck",
+        "scanner_version": "v1.9.0",
+        "database_last_modified": "2026-10-21T00:27:29Z",
+        "findings": 0
+      },
+      {
+        "target": "aijiasu-native-windows-amd64.exe",
+        "scanner": "govulncheck",
+        "scanner_version": "v1.9.0",
+        "database_last_modified": "2026-10-21T00:27:29Z",
+        "findings": 0
+      },
+      {
+        "target": "aijiasu-native-windows-arm64.exe",
+        "scanner": "govulncheck",
+        "scanner_version": "v1.9.0",
+        "database_last_modified": "2026-10-21T00:27:29Z",
+        "findings": 0
+      },
+      {
+        "target": "source",
+        "scanner": "govulncheck",
+        "scanner_version": "v1.9.0",
+        "database_last_modified": "2026-10-21T00:27:29Z",
+        "findings": 0
+      }
+    ],
+    "gofmt_and_diff_whitespace": "passed"
+  },
+  "macos_real_service_regression": {
+    "total_checks": 104,
+    "passed": 104,
+    "failed": 0,
+    "suites": [
+      {
+        "os": "darwin",
+        "arch": "arm64",
+        "execution": "native",
+        "real_account_checks": 52,
+        "passed": 52,
+        "failed": 0,
+        "workers_ports_sessions_cleaned": true
+      },
+      {
+        "os": "darwin",
+        "arch": "amd64",
+        "execution": "Rosetta 2",
+        "real_account_checks": 52,
+        "passed": 52,
+        "failed": 0,
+        "workers_ports_sessions_cleaned": true
+      }
+    ],
+    "uses_existing_locally_saved_account": true,
+    "credentials_in_report": false,
+    "coverage": [
+      "interactive login and no echo, terminal restoration",
+      "node synchronization, refresh, filters and sorting",
+      "TCP probing, best selection, favorites and recent successful connections",
+      "custom ports, SOCKS5, HTTP CONNECT and ordinary HTTP",
+      "four concurrent requests, switching and keepalive",
+      "disconnect without direct fallback, reconnect without password",
+      "stop and logout, private files and no password persistence"
+    ]
+  },
+  "macos_real_initialization": [
+    {
+      "arch": "arm64",
+      "official_reference_download": "passed",
+      "native_initialization": "passed",
+      "idempotence_and_preserved_bytes": "passed",
+      "private_permissions": "passed",
+      "account_session_created": false
+    },
+    {
+      "arch": "amd64",
+      "official_reference_download": "passed",
+      "native_initialization": "passed",
+      "idempotence_and_preserved_bytes": "passed",
+      "private_permissions": "passed",
+      "account_session_created": false
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "aijiasu-native-linux-amd64",
+      "os": "linux",
+      "arch": "amd64",
+      "format": "static ELF64",
+      "version": "1.0.1",
+      "version_command_executed": true,
+      "size_bytes": 7245986,
+      "sha256": "3ef98fa57b08061437390f1d6612b6193a6906114ce18cba0d46f7a148a07dc1",
+      "actual_target_acceptance": "passed"
+    },
+    {
+      "name": "aijiasu-native-linux-arm64",
+      "os": "linux",
+      "arch": "arm64",
+      "format": "static ELF64",
+      "version": "1.0.1",
+      "version_command_executed": true,
+      "size_bytes": 6684834,
+      "sha256": "5686cc60ce3573623fef0ebb80c9012cca87c2d822983bb0753b6598710b4893",
+      "actual_target_acceptance": "passed"
+    },
+    {
+      "name": "aijiasu-native-macos-amd64",
+      "os": "darwin",
+      "arch": "amd64",
+      "format": "Mach-O ad-hoc signed",
+      "version": "1.0.1",
+      "version_command_executed": true,
+      "size_bytes": 7432256,
+      "sha256": "a308c2fe9ce1476e421d989eafebb103a051683b892f89cfdaf46eff4a1127f8"
+    },
+    {
+      "name": "aijiasu-native-macos-arm64",
+      "os": "darwin",
+      "arch": "arm64",
+      "format": "Mach-O ad-hoc signed",
+      "version": "1.0.1",
+      "version_command_executed": true,
+      "size_bytes": 6772960,
+      "sha256": "3172e9e0bcc2d1d2a0da158fc119502a32b7baf4b8b48808da4013506f09265f"
+    },
+    {
+      "name": "aijiasu-native-windows-amd64.exe",
+      "os": "windows",
+      "arch": "amd64",
+      "format": "PE32+",
+      "version": "1.0.1",
+      "version_command_executed": true,
+      "size_bytes": 7514624,
+      "sha256": "a4da6f4c5b41d282ff30e8a93075d01b1e0cc1105667469cbb2f750021d653a8",
+      "actual_target_acceptance": "passed"
+    },
+    {
+      "name": "aijiasu-native-windows-arm64.exe",
+      "os": "windows",
+      "arch": "arm64",
+      "format": "PE32+",
+      "version": "1.0.1",
+      "version_command_executed": true,
+      "size_bytes": 6810112,
+      "sha256": "25b586d6e2774e46aa69848b4a1f71b6d99a0b46c0af5d6a1e634fd505a2ebef",
+      "actual_target_acceptance": "passed"
+    }
+  ],
+  "windows_support": {
+    "target_os": "Windows 10 1809+ and Windows 11",
+    "filesystem": "Local filesystem with Windows DACL and AF_UNIX support",
+    "private_storage": "Protected DACL created before new directories are published; existing directory/file/socket DACLs checked through OS handles",
+    "trusted_acl_principals": [
+      "current user",
+      "LocalSystem",
+      "Builtin Administrators"
+    ],
+    "file_locks": "LockFileEx with nonblocking retries, bounded waits and context cancellation",
+    "local_control": "AF_UNIX stream socket; no WSL required",
+    "interactive_input": "Win32 console input with UTF-16 conversion, hidden echo, editing, 4 KiB UTF-8 byte bound and cancellation",
+    "login_clock": "GetTickCount64 via x/sys/windows.DurationSinceBoot",
+    "runtime_validation": "Passed in Windows 11 ARM64 VM: native arm64 and Windows x64 emulation"
+  },
+  "linux_support": {
+    "binary_format": "ELF64, correct target machine, no PT_INTERP or PT_DYNAMIC program header",
+    "runtime_validation": "Passed in Debian 12 Docker Desktop: native arm64 and x86_64 emulation"
+  },
+  "limits": [
+    "Linux and Windows actual runtime checks passed in the declared containers/VM. amd64 was emulated on ARM64 hardware; other OS versions, distributions and long-running conditions remain untested. Earlier unsuccessful attempts and their final retests are preserved in the runtime acceptance record.",
+    "macOS amd64 actual binary executed through Rosetta 2; no physical Intel Mac tested.",
+    "macOS binaries use ad-hoc signing without Developer ID or notarization; Windows binaries are not Authenticode signed.",
+    "Control socket full path limit is 100 bytes; long Windows user paths may require a shorter --config-dir.",
+    "Windows interactive password input requires a Win32 console; otherwise use --password-stdin.",
+    "Only configurable local TCP proxy ports; UDP and IPv6 targets unsupported.",
+    "Known-vulnerability scan reflects the named database snapshot and does not prove absence of unknown vulnerabilities."
+  ],
+  "publication": {
+    "github_assets_uploaded": false,
+    "asset_policy": "Six bare binary files only; no account configuration or extra attachments."
+  },
+  "previous_evidence": [
+    "release-1.0.1.json",
+    "release-1.0.0.json"
+  ],
+  "runtime_acceptance": {
+    "evidence": "release-1.0.1-runtime-acceptance.json",
+    "total_real_checks": 196,
+    "passed": 196,
+    "failed": 0,
+    "production_source_unchanged": true,
+    "original_binary_bytes_verified": true
+  }
+}
